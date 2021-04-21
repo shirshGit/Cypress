@@ -1,0 +1,17 @@
+{
+    "data": {
+      "insights": {
+        "tracepoints": [
+          {
+            "id": 1154,
+            "name": "DoNotDelete",
+            "__typename": "InsightType"
+          }    
+        ],
+        "__typename": "InsightsResponseType"
+      }
+    },
+    "loading": false,
+    "networkStatus": 7,
+    "stale": false
+  }
