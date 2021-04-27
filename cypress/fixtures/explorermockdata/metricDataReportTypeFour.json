@@ -1,0 +1,1254 @@
+{
+  "data": {
+      "syntheticMetrics": [
+          {
+              "type": 36,
+              "name": "Total Downloaded Bytes",
+              "groupType": 1,
+              "defaultDataType": 1,
+              "supportedTestTypes": [
+                  0,
+                  1,
+                  9,
+                  17
+              ],
+              "__typename": "SyntheticMetricItemType"
+          },
+          {
+              "type": 47,
+              "name": "Webpage Response (ms)",
+              "groupType": 2,
+              "defaultDataType": 1,
+              "supportedTestTypes": [
+                  0,
+                  1,
+                  2,
+                  9,
+                  17
+              ],
+              "__typename": "SyntheticMetricItemType"
+          },
+          {
+              "type": 42,
+              "name": "# Connections",
+              "groupType": 2,
+              "defaultDataType": 1,
+              "supportedTestTypes": [
+                  0,
+                  1,
+                  2,
+                  9,
+                  17
+              ],
+              "__typename": "SyntheticMetricItemType"
+          },
+          {
+              "type": 13,
+              "name": "# Hosts",
+              "groupType": 2,
+              "defaultDataType": 1,
+              "supportedTestTypes": [
+                  0,
+                  1,
+                  2,
+                  9,
+                  17
+              ],
+              "__typename": "SyntheticMetricItemType"
+          },
+          {
+              "type": 48,
+              "name": "Bottleneck Time (ms)",
+              "groupType": 2,
+              "defaultDataType": 1,
+              "supportedTestTypes": [
+                  0,
+                  1,
+                  2,
+                  9,
+                  17
+              ],
+              "__typename": "SyntheticMetricItemType"
+          },
+          {
+              "type": 49,
+              "name": "% Bottleneck",
+              "groupType": 2,
+              "defaultDataType": 0,
+              "supportedTestTypes": [
+                  0,
+                  1,
+                  2,
+                  9,
+                  17
+              ],
+              "__typename": "SyntheticMetricItemType"
+          },
+          {
+              "type": 14,
+              "name": "# Items (Total)",
+              "groupType": 2,
+              "defaultDataType": 1,
+              "supportedTestTypes": [
+                  0,
+                  1,
+                  2,
+                  9,
+                  13,
+                  17
+              ],
+              "__typename": "SyntheticMetricItemType"
+          },
+          {
+              "type": 15,
+              "name": "% Availability",
+              "groupType": 5,
+              "defaultDataType": 0,
+              "supportedTestTypes": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  9,
+                  10,
+                  11,
+                  13,
+                  14,
+                  15,
+                  16,
+                  17,
+                  18
+              ],
+              "__typename": "SyntheticMetricItemType"
+          },
+          {
+              "type": 95,
+              "name": "% Downtime",
+              "groupType": 5,
+              "defaultDataType": 0,
+              "supportedTestTypes": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  9,
+                  10,
+                  11,
+                  13,
+                  14,
+                  15,
+                  17
+              ],
+              "__typename": "SyntheticMetricItemType"
+          },
+          {
+              "type": 208,
+              "name": "# Test Errors",
+              "groupType": 5,
+              "defaultDataType": 0,
+              "supportedTestTypes": [
+                  0,
+                  1,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  9,
+                  10,
+                  11,
+                  12,
+                  13,
+                  14,
+                  15,
+                  16,
+                  17,
+                  18
+              ],
+              "__typename": "SyntheticMetricItemType"
+          },
+          {
+              "type": 242,
+              "name": "# Test Failures",
+              "groupType": 5,
+              "defaultDataType": 0,
+              "supportedTestTypes": [
+                  0,
+                  1,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  9,
+                  10,
+                  11,
+                  12,
+                  13,
+                  14,
+                  15,
+                  16,
+                  17,
+                  18
+              ],
+              "__typename": "SyntheticMetricItemType"
+          },
+          {
+              "type": 108,
+              "name": "% Adjusted Availability",
+              "groupType": 5,
+              "defaultDataType": 0,
+              "supportedTestTypes": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  9,
+                  10,
+                  11,
+                  12,
+                  13,
+                  14,
+                  15,
+                  17
+              ],
+              "__typename": "SyntheticMetricItemType"
+          },
+          {
+              "type": 109,
+              "name": "# Purged Runs",
+              "groupType": 5,
+              "defaultDataType": 0,
+              "supportedTestTypes": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  9,
+                  10,
+                  11,
+                  12,
+                  13,
+                  14,
+                  15,
+                  17
+              ],
+              "__typename": "SyntheticMetricItemType"
+          },
+          {
+              "type": 16,
+              "name": "% Content Availability",
+              "groupType": 5,
+              "defaultDataType": 0,
+              "supportedTestTypes": [
+                  0,
+                  1,
+                  2,
+                  9,
+                  11,
+                  13,
+                  17
+              ],
+              "__typename": "SyntheticMetricItemType"
+          },
+          {
+              "type": 18,
+              "name": "# Content Load Errors",
+              "groupType": 5,
+              "defaultDataType": 1,
+              "supportedTestTypes": [
+                  0,
+                  1,
+                  2,
+                  9,
+                  17
+              ],
+              "__typename": "SyntheticMetricItemType"
+          },
+          {
+              "type": 33,
+              "name": "# Zone Failures",
+              "groupType": 5,
+              "defaultDataType": 0,
+              "supportedTestTypes": [
+                  0,
+                  1,
+                  2,
+                  9,
+                  17
+              ],
+              "__typename": "SyntheticMetricItemType"
+          },
+          {
+              "type": 61,
+              "name": "# Runs",
+              "groupType": 5,
+              "defaultDataType": 0,
+              "supportedTestTypes": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  9,
+                  10,
+                  11,
+                  12,
+                  13,
+                  14,
+                  15,
+                  16,
+                  17,
+                  18
+              ],
+              "__typename": "SyntheticMetricItemType"
+          },
+          {
+              "type": 125,
+              "name": "Signal Quality",
+              "groupType": 6,
+              "defaultDataType": 1,
+              "supportedTestTypes": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  9,
+                  10,
+                  11,
+                  12,
+                  13,
+                  14,
+                  15,
+                  16,
+                  17,
+                  18
+              ],
+              "__typename": "SyntheticMetricItemType"
+          },
+          {
+              "type": 126,
+              "name": "Signal Strength (dBm)",
+              "groupType": 6,
+              "defaultDataType": 1,
+              "supportedTestTypes": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  9,
+                  10,
+                  11,
+                  12,
+                  13,
+                  14,
+                  15,
+                  16,
+                  17,
+                  18
+              ],
+              "__typename": "SyntheticMetricItemType"
+          },
+          {
+              "type": 1,
+              "name": "DNS (ms)",
+              "groupType": 1,
+              "defaultDataType": 1,
+              "supportedTestTypes": [
+                  3,
+                  4,
+                  7,
+                  10,
+                  11,
+                  13,
+                  14,
+                  15,
+                  16,
+                  18
+              ],
+              "__typename": "SyntheticMetricItemType"
+          },
+          {
+              "type": 203,
+              "name": "Get (ms)",
+              "groupType": 1,
+              "defaultDataType": 1,
+              "supportedTestTypes": [
+                  3
+              ],
+              "__typename": "SyntheticMetricItemType"
+          },
+          {
+              "type": 205,
+              "name": "Upload (ms)",
+              "groupType": 1,
+              "defaultDataType": 1,
+              "supportedTestTypes": [
+                  3
+              ],
+              "__typename": "SyntheticMetricItemType"
+          },
+          {
+              "type": 200,
+              "name": "Download (ms)",
+              "groupType": 1,
+              "defaultDataType": 1,
+              "supportedTestTypes": [
+                  3
+              ],
+              "__typename": "SyntheticMetricItemType"
+          },
+          {
+              "type": 201,
+              "name": "Response (ms)",
+              "groupType": 1,
+              "defaultDataType": 1,
+              "supportedTestTypes": [
+                  3,
+                  4,
+                  5,
+                  7,
+                  10,
+                  14,
+                  15
+              ],
+              "__typename": "SyntheticMetricItemType"
+          },
+          {
+              "type": 34,
+              "name": "Delete (ms)",
+              "groupType": 1,
+              "defaultDataType": 1,
+              "supportedTestTypes": [
+                  3
+              ],
+              "__typename": "SyntheticMetricItemType"
+          },
+          {
+              "type": 202,
+              "name": "Download Throughput",
+              "groupType": 1,
+              "defaultDataType": 1,
+              "supportedTestTypes": [
+                  3,
+                  4
+              ],
+              "__typename": "SyntheticMetricItemType"
+          },
+          {
+              "type": 204,
+              "name": "Download File Size",
+              "groupType": 1,
+              "defaultDataType": 1,
+              "supportedTestTypes": [
+                  3,
+                  4
+              ],
+              "__typename": "SyntheticMetricItemType"
+          },
+          {
+              "type": 89,
+              "name": "Test Time (ms)",
+              "groupType": 5,
+              "defaultDataType": 1,
+              "supportedTestTypes": [
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  10,
+                  11,
+                  12,
+                  13,
+                  14,
+                  15,
+                  16,
+                  18
+              ],
+              "__typename": "SyntheticMetricItemType"
+          },
+          {
+              "type": 35,
+              "name": "Apdex",
+              "groupType": 5,
+              "defaultDataType": 11,
+              "supportedTestTypes": [
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  10,
+                  11,
+                  12,
+                  13,
+                  16,
+                  18
+              ],
+              "__typename": "SyntheticMetricItemType"
+          },
+          {
+              "type": 80,
+              "name": "% Satisfied",
+              "groupType": 5,
+              "defaultDataType": 23,
+              "supportedTestTypes": [
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  10,
+                  11,
+                  12,
+                  13,
+                  16,
+                  18
+              ],
+              "__typename": "SyntheticMetricItemType"
+          },
+          {
+              "type": 81,
+              "name": "% Tolerating",
+              "groupType": 5,
+              "defaultDataType": 24,
+              "supportedTestTypes": [
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  10,
+                  11,
+                  12,
+                  13,
+                  16,
+                  18
+              ],
+              "__typename": "SyntheticMetricItemType"
+          },
+          {
+              "type": 82,
+              "name": "% Frustrated",
+              "groupType": 5,
+              "defaultDataType": 25,
+              "supportedTestTypes": [
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  10,
+                  11,
+                  12,
+                  13,
+                  16,
+                  18
+              ],
+              "__typename": "SyntheticMetricItemType"
+          },
+          {
+              "type": 83,
+              "name": "% Not Frustrated",
+              "groupType": 5,
+              "defaultDataType": 26,
+              "supportedTestTypes": [
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  10,
+                  11,
+                  12,
+                  13,
+                  16,
+                  18
+              ],
+              "__typename": "SyntheticMetricItemType"
+          },
+          {
+              "type": 2,
+              "name": "Connect (ms)",
+              "groupType": 1,
+              "defaultDataType": 1,
+              "supportedTestTypes": [
+                  4,
+                  7,
+                  10,
+                  11,
+                  13,
+                  15,
+                  16,
+                  18
+              ],
+              "__typename": "SyntheticMetricItemType"
+          },
+          {
+              "type": 3,
+              "name": "Send (ms)",
+              "groupType": 1,
+              "defaultDataType": 1,
+              "supportedTestTypes": [
+                  4,
+                  7,
+                  13,
+                  15
+              ],
+              "__typename": "SyntheticMetricItemType"
+          },
+          {
+              "type": 4,
+              "name": "Wait (ms)",
+              "groupType": 1,
+              "defaultDataType": 1,
+              "supportedTestTypes": [
+                  4,
+                  7,
+                  10,
+                  11,
+                  15
+              ],
+              "__typename": "SyntheticMetricItemType"
+          },
+          {
+              "type": 5,
+              "name": "Time To First Byte (ms)",
+              "groupType": 1,
+              "defaultDataType": 1,
+              "supportedTestTypes": [
+                  4
+              ],
+              "__typename": "SyntheticMetricItemType"
+          },
+          {
+              "type": 6,
+              "name": "Load (ms)",
+              "groupType": 1,
+              "defaultDataType": 1,
+              "supportedTestTypes": [
+                  4,
+                  10,
+                  13
+              ],
+              "__typename": "SyntheticMetricItemType"
+          },
+          {
+              "type": 32,
+              "name": "Server Response (ms)",
+              "groupType": 1,
+              "defaultDataType": 1,
+              "supportedTestTypes": [
+                  4,
+                  13
+              ],
+              "__typename": "SyntheticMetricItemType"
+          },
+          {
+              "type": 188,
+              "name": "# A",
+              "groupType": 5,
+              "defaultDataType": 1,
+              "supportedTestTypes": [
+                  5
+              ],
+              "__typename": "SyntheticMetricItemType"
+          },
+          {
+              "type": 189,
+              "name": "# AAAA",
+              "groupType": 5,
+              "defaultDataType": 1,
+              "supportedTestTypes": [
+                  5
+              ],
+              "__typename": "SyntheticMetricItemType"
+          },
+          {
+              "type": 190,
+              "name": "# Cname",
+              "groupType": 5,
+              "defaultDataType": 1,
+              "supportedTestTypes": [
+                  5
+              ],
+              "__typename": "SyntheticMetricItemType"
+          },
+          {
+              "type": 191,
+              "name": "# Ns",
+              "groupType": 5,
+              "defaultDataType": 1,
+              "supportedTestTypes": [
+                  5
+              ],
+              "__typename": "SyntheticMetricItemType"
+          },
+          {
+              "type": 20,
+              "name": "% Ping Packet Loss",
+              "groupType": 4,
+              "defaultDataType": 1,
+              "supportedTestTypes": [
+                  5,
+                  6,
+                  7,
+                  10,
+                  11,
+                  13,
+                  14,
+                  15
+              ],
+              "__typename": "SyntheticMetricItemType"
+          },
+          {
+              "type": 21,
+              "name": "Ping Round Trip (ms)",
+              "groupType": 4,
+              "defaultDataType": 1,
+              "supportedTestTypes": [
+                  5,
+                  6,
+                  7,
+                  10,
+                  11,
+                  12,
+                  13,
+                  14,
+                  15
+              ],
+              "__typename": "SyntheticMetricItemType"
+          },
+          {
+              "type": 51,
+              "name": "Helo Time (ms)",
+              "groupType": 1,
+              "defaultDataType": 1,
+              "supportedTestTypes": [
+                  7
+              ],
+              "__typename": "SyntheticMetricItemType"
+          },
+          {
+              "type": 30,
+              "name": "SSL (ms)",
+              "groupType": 1,
+              "defaultDataType": 1,
+              "supportedTestTypes": [
+                  7,
+                  10,
+                  11,
+                  13,
+                  15
+              ],
+              "__typename": "SyntheticMetricItemType"
+          },
+          {
+              "type": 50,
+              "name": "Authentication (ms)",
+              "groupType": 1,
+              "defaultDataType": 1,
+              "supportedTestTypes": [
+                  7,
+                  11,
+                  15
+              ],
+              "__typename": "SyntheticMetricItemType"
+          },
+          {
+              "type": 209,
+              "name": "Message Size",
+              "groupType": 1,
+              "defaultDataType": 1,
+              "supportedTestTypes": [
+                  7
+              ],
+              "__typename": "SyntheticMetricItemType"
+          },
+          {
+              "type": 12,
+              "name": "Throughput",
+              "groupType": 1,
+              "defaultDataType": 1,
+              "supportedTestTypes": [
+                  7,
+                  10,
+                  11,
+                  13
+              ],
+              "__typename": "SyntheticMetricItemType"
+          },
+          {
+              "type": 65,
+              "name": "Initial Buffer (ms)",
+              "groupType": 1,
+              "defaultDataType": 1,
+              "supportedTestTypes": [
+                  10
+              ],
+              "__typename": "SyntheticMetricItemType"
+          },
+          {
+              "type": 62,
+              "name": "Play (ms)",
+              "groupType": 1,
+              "defaultDataType": 1,
+              "supportedTestTypes": [
+                  10
+              ],
+              "__typename": "SyntheticMetricItemType"
+          },
+          {
+              "type": 63,
+              "name": "Total Buffer (ms)",
+              "groupType": 1,
+              "defaultDataType": 1,
+              "supportedTestTypes": [
+                  10
+              ],
+              "__typename": "SyntheticMetricItemType"
+          },
+          {
+              "type": 64,
+              "name": "Buffer Count",
+              "groupType": 1,
+              "defaultDataType": 1,
+              "supportedTestTypes": [
+                  10
+              ],
+              "__typename": "SyntheticMetricItemType"
+          },
+          {
+              "type": 10,
+              "name": "Test Response (ms)",
+              "groupType": 1,
+              "defaultDataType": 1,
+              "supportedTestTypes": [
+                  13
+              ],
+              "__typename": "SyntheticMetricItemType"
+          },
+          {
+              "type": 11,
+              "name": "Exec Command Results (Bytes)",
+              "groupType": 1,
+              "defaultDataType": 1,
+              "supportedTestTypes": [
+                  11
+              ],
+              "__typename": "SyntheticMetricItemType"
+          },
+          {
+              "type": 78,
+              "name": "% Packet Loss",
+              "groupType": 8,
+              "defaultDataType": 0,
+              "supportedTestTypes": [
+                  12
+              ],
+              "__typename": "SyntheticMetricItemType"
+          },
+          {
+              "type": 104,
+              "name": "# ASs",
+              "groupType": 8,
+              "defaultDataType": 0,
+              "supportedTestTypes": [
+                  12
+              ],
+              "__typename": "SyntheticMetricItemType"
+          },
+          {
+              "type": 105,
+              "name": "# Cities",
+              "groupType": 8,
+              "defaultDataType": 0,
+              "supportedTestTypes": [
+                  12
+              ],
+              "__typename": "SyntheticMetricItemType"
+          },
+          {
+              "type": 106,
+              "name": "# Countries",
+              "groupType": 8,
+              "defaultDataType": 0,
+              "supportedTestTypes": [
+                  12
+              ],
+              "__typename": "SyntheticMetricItemType"
+          },
+          {
+              "type": 107,
+              "name": "# Hops",
+              "groupType": 8,
+              "defaultDataType": 1,
+              "supportedTestTypes": [
+                  12
+              ],
+              "__typename": "SyntheticMetricItemType"
+          },
+          {
+              "type": 7,
+              "name": "Base Response (ms)",
+              "groupType": 1,
+              "defaultDataType": 1,
+              "supportedTestTypes": [
+                  13
+              ],
+              "__typename": "SyntheticMetricItemType"
+          },
+          {
+              "type": 79,
+              "name": "Redirect (ms)",
+              "groupType": 1,
+              "defaultDataType": 1,
+              "supportedTestTypes": [
+                  13
+              ],
+              "__typename": "SyntheticMetricItemType"
+          },
+          {
+              "type": 22,
+              "name": "Downloaded Bytes",
+              "groupType": 1,
+              "defaultDataType": 1,
+              "supportedTestTypes": [
+                  13
+              ],
+              "__typename": "SyntheticMetricItemType"
+          },
+          {
+              "type": 66,
+              "name": "Wire Time (ms)",
+              "groupType": 2,
+              "defaultDataType": 1,
+              "supportedTestTypes": [
+                  13
+              ],
+              "__typename": "SyntheticMetricItemType"
+          },
+          {
+              "type": 67,
+              "name": "Client Time (ms)",
+              "groupType": 2,
+              "defaultDataType": 1,
+              "supportedTestTypes": [
+                  13
+              ],
+              "__typename": "SyntheticMetricItemType"
+          },
+          {
+              "type": 168,
+              "name": "First Paint",
+              "groupType": 2,
+              "defaultDataType": 1,
+              "supportedTestTypes": [
+                  13
+              ],
+              "__typename": "SyntheticMetricItemType"
+          },
+          {
+              "type": 169,
+              "name": "First Contentful Paint",
+              "groupType": 2,
+              "defaultDataType": 1,
+              "supportedTestTypes": [
+                  13
+              ],
+              "__typename": "SyntheticMetricItemType"
+          },
+          {
+              "type": 170,
+              "name": "Time To Interactive",
+              "groupType": 2,
+              "defaultDataType": 1,
+              "supportedTestTypes": [
+                  13
+              ],
+              "__typename": "SyntheticMetricItemType"
+          },
+          {
+              "type": 158,
+              "name": "Visually Complete (ms)",
+              "groupType": 2,
+              "defaultDataType": 1,
+              "supportedTestTypes": [
+                  13
+              ],
+              "__typename": "SyntheticMetricItemType"
+          },
+          {
+              "type": 187,
+              "name": "Frames Per Second",
+              "groupType": 2,
+              "defaultDataType": 1,
+              "supportedTestTypes": [
+                  13
+              ],
+              "__typename": "SyntheticMetricItemType"
+          },
+          {
+              "type": 85,
+              "name": "# Sends",
+              "groupType": 3,
+              "defaultDataType": 1,
+              "supportedTestTypes": [
+                  13
+              ],
+              "__typename": "SyntheticMetricItemType"
+          },
+          {
+              "type": 86,
+              "name": "Send Data Bytes",
+              "groupType": 3,
+              "defaultDataType": 1,
+              "supportedTestTypes": [
+                  13
+              ],
+              "__typename": "SyntheticMetricItemType"
+          },
+          {
+              "type": 87,
+              "name": "# Receives",
+              "groupType": 3,
+              "defaultDataType": 1,
+              "supportedTestTypes": [
+                  13
+              ],
+              "__typename": "SyntheticMetricItemType"
+          },
+          {
+              "type": 88,
+              "name": "Receive Data Bytes",
+              "groupType": 3,
+              "defaultDataType": 1,
+              "supportedTestTypes": [
+                  13
+              ],
+              "__typename": "SyntheticMetricItemType"
+          },
+          {
+              "type": 90,
+              "name": "Positive Offset (ms)",
+              "groupType": 1,
+              "defaultDataType": 1,
+              "supportedTestTypes": [
+                  14
+              ],
+              "__typename": "SyntheticMetricItemType"
+          },
+          {
+              "type": 91,
+              "name": "Negative Offset (ms)",
+              "groupType": 1,
+              "defaultDataType": 1,
+              "supportedTestTypes": [
+                  14
+              ],
+              "__typename": "SyntheticMetricItemType"
+          },
+          {
+              "type": 92,
+              "name": "Round Trip Delay (ms)",
+              "groupType": 1,
+              "defaultDataType": 1,
+              "supportedTestTypes": [
+                  14
+              ],
+              "__typename": "SyntheticMetricItemType"
+          },
+          {
+              "type": 93,
+              "name": "Root Delay (ms)",
+              "groupType": 1,
+              "defaultDataType": 1,
+              "supportedTestTypes": [
+                  14
+              ],
+              "__typename": "SyntheticMetricItemType"
+          },
+          {
+              "type": 94,
+              "name": "Root Dispersion (ms)",
+              "groupType": 1,
+              "defaultDataType": 1,
+              "supportedTestTypes": [
+                  14
+              ],
+              "__typename": "SyntheticMetricItemType"
+          },
+          {
+              "type": 99,
+              "name": "Logout (ms)",
+              "groupType": 1,
+              "defaultDataType": 1,
+              "supportedTestTypes": [
+                  15
+              ],
+              "__typename": "SyntheticMetricItemType"
+          },
+          {
+              "type": 101,
+              "name": "Search (ms)",
+              "groupType": 1,
+              "defaultDataType": 1,
+              "supportedTestTypes": [
+                  15
+              ],
+              "__typename": "SyntheticMetricItemType"
+          },
+          {
+              "type": 102,
+              "name": "List (ms)",
+              "groupType": 1,
+              "defaultDataType": 1,
+              "supportedTestTypes": [
+                  15
+              ],
+              "__typename": "SyntheticMetricItemType"
+          },
+          {
+              "type": 206,
+              "name": "Fetch (ms)",
+              "groupType": 1,
+              "defaultDataType": 1,
+              "supportedTestTypes": [
+                  15
+              ],
+              "__typename": "SyntheticMetricItemType"
+          },
+          {
+              "type": 207,
+              "name": "Message Size (Bytes)",
+              "groupType": 1,
+              "defaultDataType": 1,
+              "supportedTestTypes": [
+                  15
+              ],
+              "__typename": "SyntheticMetricItemType"
+          },
+          {
+              "type": 110,
+              "name": "Publish Time (ms)",
+              "groupType": 1,
+              "defaultDataType": 1,
+              "supportedTestTypes": [
+                  16
+              ],
+              "__typename": "SyntheticMetricItemType"
+          },
+          {
+              "type": 111,
+              "name": "Publish Size (bytes)",
+              "groupType": 1,
+              "defaultDataType": 1,
+              "supportedTestTypes": [
+                  16
+              ],
+              "__typename": "SyntheticMetricItemType"
+          },
+          {
+              "type": 112,
+              "name": "Subscribe Time (ms)",
+              "groupType": 1,
+              "defaultDataType": 1,
+              "supportedTestTypes": [
+                  16
+              ],
+              "__typename": "SyntheticMetricItemType"
+          },
+          {
+              "type": 113,
+              "name": "Subscribe Size (bytes)",
+              "groupType": 1,
+              "defaultDataType": 1,
+              "supportedTestTypes": [
+                  16
+              ],
+              "__typename": "SyntheticMetricItemType"
+          },
+          {
+              "type": 123,
+              "name": "Handshake (ms)",
+              "groupType": 1,
+              "defaultDataType": 1,
+              "supportedTestTypes": [
+                  18
+              ],
+              "__typename": "SyntheticMetricItemType"
+          },
+          {
+              "type": 124,
+              "name": "Days To Expiration",
+              "groupType": 1,
+              "defaultDataType": 1,
+              "supportedTestTypes": [
+                  18
+              ],
+              "__typename": "SyntheticMetricItemType"
+          }
+      ],
+      "insights": {
+          "indicators": [
+              {
+                  "id": 1332,
+                  "name": "Ind_Donotdelete",
+                  "contentType": 2,
+                  "statusType": 0,
+                  "__typename": "InsightType"
+              },
+              {
+                  "id": 7061,
+                  "name": "TestName",
+                  "contentType": 2,
+                  "statusType": 0,
+                  "__typename": "InsightType"
+              },
+              {
+                  "id": 8115,
+                  "name": "test tt",
+                  "contentType": 2,
+                  "statusType": 1,
+                  "__typename": "InsightType"
+              },
+              {
+                  "id": 8716,
+                  "name": "EmulatedTest",
+                  "contentType": 2,
+                  "statusType": 0,
+                  "__typename": "InsightType"
+              }
+          ],
+          "__typename": "InsightsResponseType"
+      }
+  }
+}

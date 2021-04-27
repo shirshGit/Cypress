@@ -1,0 +1,159 @@
+{
+	"data": {
+		"division": [
+			{
+				"testTypeToMonitorTypes": [
+					{
+						"displayTestType": 0,
+						"displayMonitorTypes": [
+							2,
+							3,
+							19,
+							20,
+							0,
+							18,
+							26
+						],
+						"__typename": "TestTypeToMonitorTypes"
+					},
+					{
+						"displayTestType": 1,
+						"displayMonitorTypes": [
+							3,
+							0,
+							18,
+							26
+						],
+						"__typename": "TestTypeToMonitorTypes"
+					},
+					{
+						"displayTestType": 2,
+						"displayMonitorTypes": [
+							3,
+							0,
+							18,
+							26
+						],
+						"__typename": "TestTypeToMonitorTypes"
+					},
+					{
+						"displayTestType": 9,
+						"displayMonitorTypes": [],
+						"__typename": "TestTypeToMonitorTypes"
+					},
+					{
+						"displayTestType": 13,
+						"displayMonitorTypes": [],
+						"__typename": "TestTypeToMonitorTypes"
+					},
+					{
+						"displayTestType": 10,
+						"displayMonitorTypes": [],
+						"__typename": "TestTypeToMonitorTypes"
+					},
+					{
+						"displayTestType": 5,
+						"displayMonitorTypes": [
+							13,
+							12
+						],
+						"__typename": "TestTypeToMonitorTypes"
+					},
+					{
+						"displayTestType": 3,
+						"displayMonitorTypes": [],
+						"__typename": "TestTypeToMonitorTypes"
+					},
+					{
+						"displayTestType": 4,
+						"displayMonitorTypes": [
+							15,
+							22
+						],
+						"__typename": "TestTypeToMonitorTypes"
+					},
+					{
+						"displayTestType": 7,
+						"displayMonitorTypes": [],
+						"__typename": "TestTypeToMonitorTypes"
+					},
+					{
+						"displayTestType": 6,
+						"displayMonitorTypes": [
+							8,
+							23,
+							11
+						],
+						"__typename": "TestTypeToMonitorTypes"
+					},
+					{
+						"displayTestType": 12,
+						"displayMonitorTypes": [
+							9,
+							14,
+							29
+						],
+						"__typename": "TestTypeToMonitorTypes"
+					},
+					{
+						"displayTestType": 11,
+						"displayMonitorTypes": [
+							28,
+							33
+						],
+						"__typename": "TestTypeToMonitorTypes"
+					},
+					{
+						"displayTestType": 14,
+						"displayMonitorTypes": [],
+						"__typename": "TestTypeToMonitorTypes"
+					},
+					{
+						"displayTestType": 15,
+						"displayMonitorTypes": [],
+						"__typename": "TestTypeToMonitorTypes"
+					},
+					{
+						"displayTestType": 16,
+						"displayMonitorTypes": [],
+						"__typename": "TestTypeToMonitorTypes"
+					},
+					{
+						"displayTestType": 17,
+						"displayMonitorTypes": [
+							2,
+							3,
+							0,
+							18,
+							26
+						],
+						"__typename": "TestTypeToMonitorTypes"
+					},
+					{
+						"displayTestType": 18,
+						"displayMonitorTypes": [],
+						"__typename": "TestTypeToMonitorTypes"
+					},
+					{
+						"displayTestType": 20,
+						"displayMonitorTypes": [],
+						"__typename": "TestTypeToMonitorTypes"
+					},
+					{
+						"displayTestType": 21,
+						"displayMonitorTypes": [
+							8,
+							23,
+							11,
+							9,
+							14,
+							29
+						],
+						"__typename": "TestTypeToMonitorTypes"
+					}
+				],
+				"__typename": "DivisionType"
+			}
+		]
+	}
+}

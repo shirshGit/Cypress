@@ -1,0 +1,8 @@
+{
+    "env" : {
+        "configFile" : "stage.env"
+        
+      },
+      "chromeWebSecurity": false,
+      "pageLoadTimeout" : 120000
+}

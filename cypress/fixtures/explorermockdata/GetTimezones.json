@@ -1,0 +1,325 @@
+{
+	"data": {
+		"timezone": [
+			{
+				"id": 0,
+				"isDaylightSavingsActive": true,
+				"usesDaylightSavings": true,
+				"utcOffset": -5,
+				"name": "Eastern Standard Time",
+				"daylightSavingsName": "Eastern Daylight Time",
+				"daylightAbbreviation": "EDT",
+				"abbreviation": "EST",
+				"__typename": "TimezoneType"
+			},
+			{
+				"id": 1,
+				"isDaylightSavingsActive": true,
+				"usesDaylightSavings": true,
+				"utcOffset": -6,
+				"name": "Central Standard Time",
+				"daylightSavingsName": "Central Daylight Time",
+				"daylightAbbreviation": "CDT",
+				"abbreviation": "CST",
+				"__typename": "TimezoneType"
+			},
+			{
+				"id": 2,
+				"isDaylightSavingsActive": true,
+				"usesDaylightSavings": true,
+				"utcOffset": -7,
+				"name": "Mountain Standard Time",
+				"daylightSavingsName": "Mountain Daylight Time",
+				"daylightAbbreviation": "MDT",
+				"abbreviation": "MST",
+				"__typename": "TimezoneType"
+			},
+			{
+				"id": 3,
+				"isDaylightSavingsActive": true,
+				"usesDaylightSavings": true,
+				"utcOffset": -8,
+				"name": "Pacific Standard Time",
+				"daylightSavingsName": "Pacific Daylight Time",
+				"daylightAbbreviation": "PDT",
+				"abbreviation": "PST",
+				"__typename": "TimezoneType"
+			},
+			{
+				"id": 4,
+				"isDaylightSavingsActive": false,
+				"usesDaylightSavings": false,
+				"utcOffset": 0,
+				"name": "UTC",
+				"daylightSavingsName": null,
+				"daylightAbbreviation": "UTC",
+				"abbreviation": "UTC",
+				"__typename": "TimezoneType"
+			},
+			{
+				"id": 5,
+				"isDaylightSavingsActive": true,
+				"usesDaylightSavings": true,
+				"utcOffset": 1,
+				"name": "Central Europe Standard Time",
+				"daylightSavingsName": "Central Europe Daylight Time",
+				"daylightAbbreviation": "CEDT",
+				"abbreviation": "CEST",
+				"__typename": "TimezoneType"
+			},
+			{
+				"id": 6,
+				"isDaylightSavingsActive": true,
+				"usesDaylightSavings": true,
+				"utcOffset": 2,
+				"name": "Israel Standard Time",
+				"daylightSavingsName": "Israel Daylight Time",
+				"daylightAbbreviation": "JDT",
+				"abbreviation": "JST",
+				"__typename": "TimezoneType"
+			},
+			{
+				"id": 7,
+				"isDaylightSavingsActive": false,
+				"usesDaylightSavings": false,
+				"utcOffset": 9,
+				"name": "Japan Standard Time",
+				"daylightSavingsName": null,
+				"daylightAbbreviation": "JST",
+				"abbreviation": "JST",
+				"__typename": "TimezoneType"
+			},
+			{
+				"id": 8,
+				"isDaylightSavingsActive": true,
+				"usesDaylightSavings": true,
+				"utcOffset": 2,
+				"name": "E. Europe Standard Time",
+				"daylightSavingsName": "E. Europe Daylight Time",
+				"daylightAbbreviation": "EEDT",
+				"abbreviation": "EEST",
+				"__typename": "TimezoneType"
+			},
+			{
+				"id": 9,
+				"isDaylightSavingsActive": false,
+				"usesDaylightSavings": false,
+				"utcOffset": 8,
+				"name": "Singapore Standard Time",
+				"daylightSavingsName": null,
+				"daylightAbbreviation": "SGT",
+				"abbreviation": "SGT",
+				"__typename": "TimezoneType"
+			},
+			{
+				"id": 10,
+				"isDaylightSavingsActive": true,
+				"usesDaylightSavings": true,
+				"utcOffset": 10,
+				"name": "AUS Eastern Standard Time",
+				"daylightSavingsName": "AUS Eastern Daylight Time",
+				"daylightAbbreviation": "AEDT",
+				"abbreviation": "AEST",
+				"__typename": "TimezoneType"
+			},
+			{
+				"id": 11,
+				"isDaylightSavingsActive": false,
+				"usesDaylightSavings": false,
+				"utcOffset": 7,
+				"name": "SE Asia Standard Time",
+				"daylightSavingsName": null,
+				"daylightAbbreviation": "ICT",
+				"abbreviation": "ICT",
+				"__typename": "TimezoneType"
+			},
+			{
+				"id": 12,
+				"isDaylightSavingsActive": false,
+				"usesDaylightSavings": false,
+				"utcOffset": -10,
+				"name": "Hawaiian Standard Time",
+				"daylightSavingsName": null,
+				"daylightAbbreviation": "HAST",
+				"abbreviation": "HAST",
+				"__typename": "TimezoneType"
+			},
+			{
+				"id": 13,
+				"isDaylightSavingsActive": true,
+				"usesDaylightSavings": true,
+				"utcOffset": -9,
+				"name": "Alaskan Standard Time",
+				"daylightSavingsName": "Alaskan Daylight Time",
+				"daylightAbbreviation": "AKDT",
+				"abbreviation": "AKST",
+				"__typename": "TimezoneType"
+			},
+			{
+				"id": 14,
+				"isDaylightSavingsActive": true,
+				"usesDaylightSavings": true,
+				"utcOffset": -8,
+				"name": "Pacific Standard Time (Mexico)",
+				"daylightSavingsName": "Pacific Daylight Time (Mexico)",
+				"daylightAbbreviation": "PDT",
+				"abbreviation": "PST",
+				"__typename": "TimezoneType"
+			},
+			{
+				"id": 15,
+				"isDaylightSavingsActive": false,
+				"usesDaylightSavings": false,
+				"utcOffset": -7,
+				"name": "US Mountain Standard Time",
+				"daylightSavingsName": null,
+				"daylightAbbreviation": "MST",
+				"abbreviation": "MST",
+				"__typename": "TimezoneType"
+			},
+			{
+				"id": 16,
+				"isDaylightSavingsActive": false,
+				"usesDaylightSavings": true,
+				"utcOffset": -7,
+				"name": "Mountain Standard Time (Mexico)",
+				"daylightSavingsName": "Mountain Daylight Time (Mexico)",
+				"daylightAbbreviation": "MDT",
+				"abbreviation": "MST",
+				"__typename": "TimezoneType"
+			},
+			{
+				"id": 17,
+				"isDaylightSavingsActive": false,
+				"usesDaylightSavings": true,
+				"utcOffset": -4,
+				"name": "Central Brazilian Standard Time",
+				"daylightSavingsName": "Central Brazilian Daylight Time",
+				"daylightAbbreviation": "AMDT",
+				"abbreviation": "AMST",
+				"__typename": "TimezoneType"
+			},
+			{
+				"id": 18,
+				"isDaylightSavingsActive": false,
+				"usesDaylightSavings": true,
+				"utcOffset": -3,
+				"name": "E. South America Standard Time",
+				"daylightSavingsName": "E. South America Daylight Time",
+				"daylightAbbreviation": "BRDT",
+				"abbreviation": "BRST",
+				"__typename": "TimezoneType"
+			},
+			{
+				"id": 19,
+				"isDaylightSavingsActive": true,
+				"usesDaylightSavings": true,
+				"utcOffset": 0,
+				"name": "GMT Standard Time",
+				"daylightSavingsName": "British Standard Time",
+				"daylightAbbreviation": "BST",
+				"abbreviation": "GST",
+				"__typename": "TimezoneType"
+			},
+			{
+				"id": 20,
+				"isDaylightSavingsActive": false,
+				"usesDaylightSavings": false,
+				"utcOffset": 3,
+				"name": "Turkey Standard Time",
+				"daylightSavingsName": null,
+				"daylightAbbreviation": "EEDT",
+				"abbreviation": "EEST",
+				"__typename": "TimezoneType"
+			},
+			{
+				"id": 21,
+				"isDaylightSavingsActive": false,
+				"usesDaylightSavings": false,
+				"utcOffset": 8,
+				"name": "China Standard Time",
+				"daylightSavingsName": null,
+				"daylightAbbreviation": "CST",
+				"abbreviation": "CST",
+				"__typename": "TimezoneType"
+			},
+			{
+				"id": 22,
+				"isDaylightSavingsActive": false,
+				"usesDaylightSavings": false,
+				"utcOffset": 8,
+				"name": "Taipei Standard Time",
+				"daylightSavingsName": null,
+				"daylightAbbreviation": "TST",
+				"abbreviation": "TST",
+				"__typename": "TimezoneType"
+			},
+			{
+				"id": 23,
+				"isDaylightSavingsActive": false,
+				"usesDaylightSavings": false,
+				"utcOffset": 9,
+				"name": "Korea Standard Time",
+				"daylightSavingsName": null,
+				"daylightAbbreviation": "KST",
+				"abbreviation": "KST",
+				"__typename": "TimezoneType"
+			},
+			{
+				"id": 24,
+				"isDaylightSavingsActive": true,
+				"usesDaylightSavings": true,
+				"utcOffset": 12,
+				"name": "New Zealand Standard Time",
+				"daylightSavingsName": "New Zealand Daylight Time",
+				"daylightAbbreviation": "NZDT",
+				"abbreviation": "NZST",
+				"__typename": "TimezoneType"
+			},
+			{
+				"id": 25,
+				"isDaylightSavingsActive": false,
+				"usesDaylightSavings": true,
+				"utcOffset": 4,
+				"name": "Russian Standard Time",
+				"daylightSavingsName": "Russian Daylight Time",
+				"daylightAbbreviation": "MSD",
+				"abbreviation": "MSK",
+				"__typename": "TimezoneType"
+			},
+			{
+				"id": 26,
+				"isDaylightSavingsActive": false,
+				"usesDaylightSavings": false,
+				"utcOffset": 6,
+				"name": "Central Asia Standard Time",
+				"daylightSavingsName": null,
+				"daylightAbbreviation": "ALMT",
+				"abbreviation": "ALMT",
+				"__typename": "TimezoneType"
+			},
+			{
+				"id": 27,
+				"isDaylightSavingsActive": false,
+				"usesDaylightSavings": true,
+				"utcOffset": 5,
+				"name": "Pakistan Standard Time",
+				"daylightSavingsName": "Pakistan Daylight Time",
+				"daylightAbbreviation": "PKST",
+				"abbreviation": "PKT",
+				"__typename": "TimezoneType"
+			},
+			{
+				"id": 28,
+				"isDaylightSavingsActive": false,
+				"usesDaylightSavings": false,
+				"utcOffset": 5.5,
+				"name": "India Standard Time",
+				"daylightSavingsName": null,
+				"daylightAbbreviation": "IST",
+				"abbreviation": "IST",
+				"__typename": "TimezoneType"
+			}
+		]
+	}
+}

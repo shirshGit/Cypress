@@ -1,0 +1,26 @@
+{
+	"data": {
+		"zones": [
+			{
+				"id": -2,
+				"name": "[Self]",
+				"__typename": "ContentZoneResponseType"
+			},
+			{
+				"id": -3,
+				"name": "[Third Party]",
+				"__typename": "ContentZoneResponseType"
+			},
+			{
+				"id": 1416,
+				"name": "Test_DoNOTDelete_Primary",
+				"__typename": "ContentZoneResponseType"
+			},
+			{
+				"id": 1417,
+				"name": "Test_DoNOTDelete_Third Party",
+				"__typename": "ContentZoneResponseType"
+			}
+		]
+	}
+}

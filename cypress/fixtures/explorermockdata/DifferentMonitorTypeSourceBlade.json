@@ -1,0 +1,87 @@
+{
+	"data": {
+		"product": [
+			{
+				"id": 16,
+				"name": "Selenium",
+				"statusType": 0,
+				"__typename": "ProductType"
+			},
+			{
+				"id": 403,
+				"name": "DoNotDelete-DataStore",
+				"statusType": 0,
+				"__typename": "ProductType"
+			}
+		],
+		"testFolder": [
+			{
+				"id": 4508,
+				"name": "Failure Tests",
+				"parentId": 4507,
+				"productId": 403,
+				"__typename": "TestFolderType"
+			},
+			{
+				"id": 4509,
+				"name": "Transaction Emulated API",
+				"parentId": null,
+				"productId": 403,
+				"__typename": "TestFolderType"
+			},
+			{
+				"id": 4510,
+				"name": "Transaction API - macros and submacros",
+				"parentId": 4507,
+				"productId": 403,
+				"__typename": "TestFolderType"
+			}
+		],
+		"testData": [
+			{
+				"id": 7712,
+				"name": "Test1",
+				"productId": 403,
+				"folderId": null,
+				"statusType": 1,
+				"testType": 1,
+				"monitor": 17,
+				"url": null,
+				"__typename": "TestType"
+			},
+			{
+				"id": 8339,
+				"name": "Test2",
+				"productId": 403,
+				"folderId": null,
+				"statusType": 0,
+				"testType": 0,
+				"monitor": 18,
+				"url": "https://ui03.catchpoint.com/ui/Entry/PD/V/A.RJ7-B3-jSHvObU64g/66jf;refresh=2",
+				"__typename": "TestType"
+			},
+			{
+				"id": 8340,
+				"name": "Test3",
+				"productId": 403,
+				"folderId": null,
+				"statusType": 0,
+				"testType": 0,
+				"monitor": 18,
+				"url": "https://ui03.catchpoint.com/ui/Entry/PD/V/A.RJ7-B3-jSHvObU64g/66jf;refresh=2",
+				"__typename": "TestType"
+			},
+			{
+				"id": 8336,
+				"name": "Test4",
+				"productId": 403,
+				"folderId": null,
+				"statusType": 0,
+				"testType": 0,
+				"monitor": 18,
+				"url": "https://ui03.catchpoint.com/ui/Entry/PD/V/A.RJ7-B3-jSHvObU64g/66jf;refresh=2",
+				"__typename": "TestType"
+			}
+		]
+	}
+}

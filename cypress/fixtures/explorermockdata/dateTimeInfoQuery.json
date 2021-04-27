@@ -1,0 +1,10 @@
+{
+    "data": {
+        "dateTimeInfo": {
+            "startTime": "3/29/2021 4:38:32 AM",
+            "endTime": "3/30/2021 4:38:32 AM",
+            "timeZone": 4,
+            "__typename": "DateTimeInfoOutputType"
+        }
+    }
+}

@@ -1,0 +1,70 @@
+{
+	"data": {
+		"product": [
+			{
+				"id": 16,
+				"name": "Selenium",
+				"statusType": 0,
+				"__typename": "ProductType"
+			},
+			{
+				"id": 403,
+				"name": "DoNotDelete-DataStore",
+				"statusType": 0,
+				"__typename": "ProductType"
+			}
+		],
+		"testFolder": [
+			
+			{
+				"id": 12781,
+				"name": "Folder1",
+				"parentId": null,
+				"productId": 403,
+				"__typename": "TestFolderType"
+			},
+			{
+				"id": 12782,
+				"name": "Folder2",
+				"parentId": null,
+				"productId": 403,
+				"__typename": "TestFolderType"
+			}
+		],
+		"testData": [
+			{
+				"id": 15537,
+				"name": "Test1",
+				"productId": 403,
+				"folderId": 12782,
+				"statusType": 0,
+				"testType": 17,
+				"monitor": 18,
+				"url": null,
+				"__typename": "TestType"
+			},
+			{
+				"id": 17890,
+				"name": "Test2",
+				"productId": 403,
+				"folderId": null,
+				"statusType": 0,
+				"testType": 17,
+				"monitor": 18,
+				"url": null,
+				"__typename": "TestType"
+			},
+			{
+				"id": 19612,
+				"name": "4Tests",
+				"productId": 403,
+				"folderId": 12782,
+				"statusType": 1,
+				"testType": 17,
+				"monitor": 18,
+				"url": null,
+				"__typename": "TestType"
+			}
+		]
+	}
+}
