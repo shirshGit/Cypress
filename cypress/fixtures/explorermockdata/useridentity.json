@@ -21,6 +21,8 @@
 				"smartboardId": null,
 				"dashboardType": null,
 				"isLockedToDashboard": false,
+				"isWptPaidUser": true,
+				"isWptAccountVerified": true,
 				"__typename": "ContactType"
 			},
 			"levelSummary": {
@@ -59,8 +61,10 @@
 					32,
 					33,
 					34,
+					35,
 					36,
 					37,
+					38,
 					39,
 					40,
 					42,
@@ -101,13 +105,16 @@
 					16,
 					17,
 					18,
-					20
+					20,
+					21
 				],
 				"maxTracepoints": 10,
 				"maxIndicators": 10,
 				"parentLevelId": null,
 				"parentLevelName": null,
 				"parentLevelType": null,
+				"startWeekOnMonday": true,
+				"isWptClient": false,
 				"__typename": "LevelSummaryType"
 			},
 			"userRole": {
@@ -364,6 +371,8 @@
 			},
 			"isDrillingDown": false,
 			"isLockedToDashboard": false,
+			"isWptPaidUser": true,
+			"isWptAccountVerified": true,
 			"__typename": "UserType"
 		}
 	}

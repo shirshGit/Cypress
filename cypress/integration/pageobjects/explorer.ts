@@ -39,4 +39,35 @@ export default class explorer{
     {
         return 'input[data-testid = "fabricsearchbox"]';
     }
+
+    testTextselectorFromSourceBlade()
+    {
+        return 'div[class *= "SyntheticSourceSelectorTreeTableDisplay_testIcon"] + div';
+    }
+
+    testTypesSourceBlade()
+    {
+        return '#Dropdown199-option';
+    }
+
+    webTestTypeInTestTypeDropDown()
+    {
+        return '#Dropdown199-list17 > span > div';
+    }
+
+    monitorTypeSourceBlade()
+    {
+        return '#Dropdown197-option > div';
+    }
+
+    chromeMonitorSelectionInSourceBlade()
+    {        return '#Dropdown197-list1 > span > div'
+
+    }
+
+    monitorTypeTextInSourceBlade()
+    {
+        return 'div[class *= "SyntheticSourceSelectorTreeTableDisplay_syntheticSourceSelectorTable_3B8GW"] > div:nth-child(2) > div > div > div > div > div:nth-child(4) > div';
+    }
+
 }

@@ -73,7 +73,7 @@
 			},
 			{
 				"id": 8336,
-				"name": "Test5",
+				"name": "Test4",
 				"productId": 403,
 				"folderId": null,
 				"statusType": 0,
@@ -83,8 +83,5 @@
 				"__typename": "TestType"
 			}
 		]
-	},
-	"loading": false,
-	"networkStatus": 7,
-	"stale": false
+	}
 }

@@ -1,10 +1,10 @@
 {
-	"data": {
-		"dateTimeInfo": {
-			"startTime": "2/14/2021 8:27:09 AM",
-			"endTime": "2/15/2021 8:27:09 AM",
-			"timeZone": 4,
-			"__typename": "DateTimeInfoOutputType"
-		}
-	}
+    "data": {
+        "dateTimeInfo": {
+            "startTime": "3/29/2021 4:38:32 AM",
+            "endTime": "3/30/2021 4:38:32 AM",
+            "timeZone": 4,
+            "__typename": "DateTimeInfoOutputType"
+        }
+    }
 }

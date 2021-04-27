@@ -3,7 +3,7 @@
 		"timezone": [
 			{
 				"id": 0,
-				"isDaylightSavingsActive": false,
+				"isDaylightSavingsActive": true,
 				"usesDaylightSavings": true,
 				"utcOffset": -5,
 				"name": "Eastern Standard Time",
@@ -14,7 +14,7 @@
 			},
 			{
 				"id": 1,
-				"isDaylightSavingsActive": false,
+				"isDaylightSavingsActive": true,
 				"usesDaylightSavings": true,
 				"utcOffset": -6,
 				"name": "Central Standard Time",
@@ -25,7 +25,7 @@
 			},
 			{
 				"id": 2,
-				"isDaylightSavingsActive": false,
+				"isDaylightSavingsActive": true,
 				"usesDaylightSavings": true,
 				"utcOffset": -7,
 				"name": "Mountain Standard Time",
@@ -36,7 +36,7 @@
 			},
 			{
 				"id": 3,
-				"isDaylightSavingsActive": false,
+				"isDaylightSavingsActive": true,
 				"usesDaylightSavings": true,
 				"utcOffset": -8,
 				"name": "Pacific Standard Time",
@@ -58,7 +58,7 @@
 			},
 			{
 				"id": 5,
-				"isDaylightSavingsActive": false,
+				"isDaylightSavingsActive": true,
 				"usesDaylightSavings": true,
 				"utcOffset": 1,
 				"name": "Central Europe Standard Time",
@@ -69,7 +69,7 @@
 			},
 			{
 				"id": 6,
-				"isDaylightSavingsActive": false,
+				"isDaylightSavingsActive": true,
 				"usesDaylightSavings": true,
 				"utcOffset": 2,
 				"name": "Israel Standard Time",
@@ -91,7 +91,7 @@
 			},
 			{
 				"id": 8,
-				"isDaylightSavingsActive": false,
+				"isDaylightSavingsActive": true,
 				"usesDaylightSavings": true,
 				"utcOffset": 2,
 				"name": "E. Europe Standard Time",
@@ -146,7 +146,7 @@
 			},
 			{
 				"id": 13,
-				"isDaylightSavingsActive": false,
+				"isDaylightSavingsActive": true,
 				"usesDaylightSavings": true,
 				"utcOffset": -9,
 				"name": "Alaskan Standard Time",
@@ -157,7 +157,7 @@
 			},
 			{
 				"id": 14,
-				"isDaylightSavingsActive": false,
+				"isDaylightSavingsActive": true,
 				"usesDaylightSavings": true,
 				"utcOffset": -8,
 				"name": "Pacific Standard Time (Mexico)",
@@ -212,7 +212,7 @@
 			},
 			{
 				"id": 19,
-				"isDaylightSavingsActive": false,
+				"isDaylightSavingsActive": true,
 				"usesDaylightSavings": true,
 				"utcOffset": 0,
 				"name": "GMT Standard Time",
