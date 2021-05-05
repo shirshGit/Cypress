@@ -1,31 +1,25 @@
 import ExplorerHelper from '../../../Helpers/SyntheticExplorer';
 import ExplorerLocator from '../../../pageobjects/explorer'
+import LoginHelper from '../../../Helpers/LoginHelper';
+import BuildUrls from '../../../utilities/buildUrls';
 
 describe('Test Cases For Synthetic Source Balde', function () {
 
     const explorer = new ExplorerHelper();
     const explorerSelctor = new ExplorerLocator();
+    const urlBuild = new BuildUrls();
+    const loginHelper = new LoginHelper();
 
     beforeEach('', () => {
-        const mockDataExplorer = {
-            'GetUserIdentity': null,
-            'syntheticSource': 'DifferentMonitorTypeSourceBlade.json',
-            'GetTimezones': null,
-            'insights': null,
-            'metricsData': null,
-            'zoneBasics': null,
-            'GetTestTypesWithMonitorsForDivision' : null,
-            'dateTimeInfoQuery' : null
-
-        }
-
-        explorer.mockDataForExplorerPageLoad(mockDataExplorer)
-
-
+        cy.clearLocalStorage();
+        cy.clearCookies();
     })
 
     it('Verify User should only able to see test when they have synthetic monitoring access', function () {
-        cy.visit('https://localhost:44302/Preview/Explorer/').then(() => {
+        loginHelper.loginToPortal();
+        explorer.mockDataForTestTypeAndMonitorType()
+
+        cy.visit(urlBuild.ExplorerUrl()).then(() => {
 
             cy.get(explorerSelctor.testTypesSourceBlade()).click();
             cy.get(explorerSelctor.webTestTypeInTestTypeDropDown()).click();
@@ -33,7 +27,11 @@ describe('Test Cases For Synthetic Source Balde', function () {
     })
 
     it('Verify filter by monitor type on source selection blade', function(){
-        cy.visit('https://localhost:44302/Preview/Explorer/').then(() => {
+        loginHelper.loginToPortal();
+
+        explorer.mockDataForTestTypeAndMonitorType();
+
+        cy.visit(urlBuild.ExplorerUrl()).then(() => {
             cy.get(explorerSelctor.monitorTypeSourceBlade()).click();
             cy.wait(2000);
             cy.get(explorerSelctor.chromeMonitorSelectionInSourceBlade()).then(($monitor) => {

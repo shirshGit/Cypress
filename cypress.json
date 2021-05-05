@@ -1,6 +1,6 @@
 {
     "env" : {
-        "configFile" : "qa.env"
+        "configFile" : "local.env"
         
       },
       "pageLoadTimeout" : 60000,
