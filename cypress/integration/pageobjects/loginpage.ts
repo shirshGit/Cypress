@@ -1,12 +1,12 @@
 export default class login
 {
     email(){
-        return cy.get('input[id="Email"]')
+        return cy.get('input[id="Username"]')
     }
     password(){
-        return cy.get('input[type="password"]')
+        return cy.get('input[id="Password"]')
     }
     signInButton(){
-        return cy.get('input[id="LoginButton"]').contains('Login')
+        return cy.get('button[id="user-login-button"]')
     }
 }

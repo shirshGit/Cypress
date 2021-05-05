@@ -4,6 +4,12 @@
 			"id": 38,
 			"name": "qaautomationxclient-clientadministrator@catchpoint.com",
 			"userTimeZone": 4,
+			"emailPreference": {
+				"productReleaseNotes": false,
+				"knowledgeDevelopment": false,
+				"nodeUpdates": false,
+				"__typename": "EmailPreferenceType"
+			},
 			"activeContact": {
 				"id": 4627,
 				"name": "AdminQA qaautomationxclient",
@@ -20,6 +26,7 @@
 				"dashboardId": null,
 				"smartboardId": null,
 				"dashboardType": null,
+				"hasNodeRunRateSubscription": false,
 				"isLockedToDashboard": false,
 				"isWptPaidUser": true,
 				"isWptAccountVerified": true,
@@ -105,8 +112,7 @@
 					16,
 					17,
 					18,
-					20,
-					21
+					20
 				],
 				"maxTracepoints": 10,
 				"maxIndicators": 10,
@@ -115,6 +121,7 @@
 				"parentLevelType": null,
 				"startWeekOnMonday": true,
 				"isWptClient": false,
+				"paymentStatus": "Paid",
 				"__typename": "LevelSummaryType"
 			},
 			"userRole": {
@@ -188,6 +195,15 @@
 					},
 					{
 						"type": "38",
+						"activePermissions": [
+							1,
+							2,
+							3
+						],
+						"__typename": "PermissionType"
+					},
+					{
+						"type": "39",
 						"activePermissions": [
 							1,
 							2,

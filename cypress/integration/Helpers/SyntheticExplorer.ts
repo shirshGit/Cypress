@@ -1,26 +1,40 @@
+
+const graphQLUrl: string = Cypress.env('graphQLUrl');
+
+
 export default class syntheticExplorerHelper {
 
-    mockDataForExplorerPageLoad(mockDataQueryFileDict: object) {
+    // environmentForScriptRun : string = Cypress.env('environment');
+    // graphQLUrl : string = Cypress.env('graphQLUrl');
+    // dataNeedMocking : string = Cypress.env('DataMock');
 
-        cy.intercept('POST', 'https://localhost:44302/graphql', (req) => {
+    /*
+        This function is to mock graphQL requests for Explorer Page
+    */
+
+    mockDataForExplorerPageLoad(mockDataQueryFileDict: object, graphQLUrl: string) {
+        const environmentForScriptRun: string = Cypress.env('environment');
+        cy.intercept('POST', graphQLUrl, (req) => {
             let opName = req.body.operationName;
             switch (opName) {
                 case 'GetUserIdentity':
-                    if (mockDataQueryFileDict['GetUserIdentity'] === null) {
-                        if (req.body.operationName === 'GetUserIdentity') {
-                            req.reply((res) => {
-                                res.send({ fixture: 'explorermockdata/useridentity.json' });
+                    if (environmentForScriptRun === 'localhost' ) {
+                        if (mockDataQueryFileDict['GetUserIdentity'] === null) {
+                            if (req.body.operationName === 'GetUserIdentity') {
+                                req.reply((res) => {
+                                    res.send({ fixture: 'explorermockdata/useridentity.json' });
 
+                                });
+                            }
+                        }
+                        else {
+                            req.reply((res) => {
+                                //'id' : '2'
+                                res.send({
+                                    body: { data: mockDataQueryFileDict[opName] }
+                                });
                             });
                         }
-                    }
-                    else {
-                        req.reply((res) => {
-                            //'id' : '2'
-                            res.send({
-                                body: { data: mockDataQueryFileDict[opName] }
-                            });
-                        });
                     }
                     break;
 
@@ -216,5 +230,28 @@ export default class syntheticExplorerHelper {
                     req.reply();
             }
         })
+    }
+
+
+    /*
+        This function is to mock all the graphQL request with default data
+    */
+    mockDataForAllRequestsForExplorer()
+    {
+        const mockDataExplorer = {
+            'GetUserIdentity': null,
+            'syntheticSource': null,
+            'GetTimezones': null,
+            'insights': null,
+            'metricsData': null,
+            'zoneBasics': null,
+            'GetTestTypesWithMonitorsForDivision' : null,
+            'dateTimeInfoQuery' : null
+        };
+
+        const graphQLUrl = Cypress.env('graphQLUrl')
+        this.mockDataForExplorerPageLoad(mockDataExplorer, graphQLUrl);
+
+        
     }
 }
