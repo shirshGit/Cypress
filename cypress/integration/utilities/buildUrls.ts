@@ -14,4 +14,6 @@ export default class buildUrls {
     ExplorerUrl() {
         return this.baseUrl + 'Preview/Explorer/';
     }
+
+    
 }

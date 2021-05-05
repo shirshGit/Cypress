@@ -1,18 +1,24 @@
+
+const graphQLUrl: string = Cypress.env('graphQLUrl');
+
+
 export default class syntheticExplorerHelper {
 
-    environmentForScriptRun : string = Cypress.env('environment');
+    // environmentForScriptRun : string = Cypress.env('environment');
+    // graphQLUrl : string = Cypress.env('graphQLUrl');
+    // dataNeedMocking : string = Cypress.env('DataMock');
 
     /*
         This function is to mock graphQL requests for Explorer Page
     */
 
-    mockDataForExplorerPageLoad(mockDataQueryFileDict: object) {
-
-        cy.intercept('POST', 'https://qaportal.catchpoint.com/m/g', (req) => {
+    mockDataForExplorerPageLoad(mockDataQueryFileDict: object, graphQLUrl: string) {
+        const environmentForScriptRun: string = Cypress.env('environment');
+        cy.intercept('POST', graphQLUrl, (req) => {
             let opName = req.body.operationName;
             switch (opName) {
                 case 'GetUserIdentity':
-                    if (this.environmentForScriptRun === 'localhost' ) {
+                    if (environmentForScriptRun === 'localhost' ) {
                         if (mockDataQueryFileDict['GetUserIdentity'] === null) {
                             if (req.body.operationName === 'GetUserIdentity') {
                                 req.reply((res) => {
@@ -35,7 +41,6 @@ export default class syntheticExplorerHelper {
                     case 'syntheticSource':
                     if (mockDataQueryFileDict['syntheticSource'] === null) {
                         if (req.body.operationName === 'syntheticSource') {
-                            debugger;
                             req.reply((res) => {
                                 res.send({ fixture: 'explorermockdata/syntheticSource.json' });
 
@@ -244,6 +249,9 @@ export default class syntheticExplorerHelper {
             'dateTimeInfoQuery' : null
         };
 
-        this.mockDataForExplorerPageLoad(mockDataExplorer)
+        const graphQLUrl = Cypress.env('graphQLUrl')
+        this.mockDataForExplorerPageLoad(mockDataExplorer, graphQLUrl);
+
+        
     }
 }
