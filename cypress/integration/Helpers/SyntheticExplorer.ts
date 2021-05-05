@@ -236,7 +236,7 @@ export default class syntheticExplorerHelper {
     /*
         This function is to mock all the graphQL request with default data
     */
-    mockDataForAllRequestsForExplorer()
+    mockDefaultDataForAllRequestsForExplorer()
     {
         const mockDataExplorer = {
             'GetUserIdentity': null,
@@ -250,8 +250,24 @@ export default class syntheticExplorerHelper {
         };
 
         const graphQLUrl = Cypress.env('graphQLUrl')
-        this.mockDataForExplorerPageLoad(mockDataExplorer, graphQLUrl);
+        this.mockDataForExplorerPageLoad(mockDataExplorer, graphQLUrl);       
+    }
 
-        
+    mockDataForTestTypeAndMonitorType()
+    {
+        const mockDataExplorer = {
+            'GetUserIdentity': null,
+            'syntheticSource': 'DifferentMonitorTypeSourceBlade.json',
+            'GetTimezones': null,
+            'insights': null,
+            'metricsData': null,
+            'zoneBasics': null,
+            'GetTestTypesWithMonitorsForDivision' : null,
+            'dateTimeInfoQuery' : null
+
+        }
+
+        const graphQLUrl = Cypress.env('graphQLUrl')
+        this.mockDataForExplorerPageLoad(mockDataExplorer, graphQLUrl); 
     }
 }
