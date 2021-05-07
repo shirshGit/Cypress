@@ -70,4 +70,19 @@ export default class explorer{
         return 'div[class *= "SyntheticSourceSelectorTreeTableDisplay_syntheticSourceSelectorTable_3B8GW"] > div:nth-child(2) > div > div > div > div > div:nth-child(4) > div';
     }
 
+    testSelectorAfterSearchSourceBlade()
+    {
+        return 'div[class *= SyntheticSourceSelectorTreeTableDisplay_syntheticSourceSelectorTable_3B8GW] > div > div > div > label'
+    }
+
+    selectButtonInSourceSelector()
+    {
+        return '#primary-button > span';
+    }
+
+    coloumnByDropDownButton()
+    {
+        return '#ComboBox111wrapper > button > span > i > div';
+    }
+
 }

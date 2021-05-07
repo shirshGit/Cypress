@@ -1,6 +1,5 @@
-
-const graphQLUrl: string = Cypress.env('graphQLUrl');
-
+import ExplorerLocator from '../pageobjects/explorer';
+const explorerSelctor = new ExplorerLocator();
 
 export default class syntheticExplorerHelper {
 
@@ -225,6 +224,26 @@ export default class syntheticExplorerHelper {
                         }
                         break;
 
+                        case 'InsightsExplorerDimensionSelector' :
+                            if (mockDataQueryFileDict['InsightsExplorerDimensionSelector'] === null) {
+                                if (req.body.operationName === 'InsightsExplorerDimensionSelector') {
+                                    req.reply((res) => {
+                                        res.send({ fixture: 'explorermockdata/InsightsExplorerDimensionSelector.json' });
+    
+                                    });
+                                }
+                            }
+                            else {
+                                let customMockFile = 'explorermockdata/' + mockDataQueryFileDict[opName];
+                                req.reply((res) => {
+                                    //'id' : '2'
+                                    res.send({ fixture: customMockFile });
+    
+                                });
+    
+                            }
+                            break;
+
 
                 default:
                     req.reply();
@@ -269,5 +288,21 @@ export default class syntheticExplorerHelper {
 
         const graphQLUrl = Cypress.env('graphQLUrl')
         this.mockDataForExplorerPageLoad(mockDataExplorer, graphQLUrl); 
+    }
+
+    searchTestInSourceSelector(testName: string)
+    {
+        cy.get(explorerSelctor.searchBoxInSouceBladeExplorer()).eq(1).should('be.visible').type(testName + '{Enter}');
+    }
+
+    selectSearchedItemFromSourceBlade()
+    {
+        cy.get(explorerSelctor.testSelectorAfterSearchSourceBlade()).click();
+        cy.get(explorerSelctor.selectButtonInSourceSelector()).click();
+    }
+
+    clickOnColumnByDropDown()
+    {
+        cy.get(explorerSelctor.coloumnByDropDownButton()).click();
     }
 }

@@ -1,4 +1,4 @@
-import ExplorerHelper from '../../../Helpers/SyntheticExplorer';
+import ExplorerHelper from '../../../Helpers/SyntheticExplorerHelper';
 import ExplorerLocator from '../../../pageobjects/explorer'
 import LoginHelper from '../../../Helpers/LoginHelper';
 import BuildUrls from '../../../utilities/buildUrls';

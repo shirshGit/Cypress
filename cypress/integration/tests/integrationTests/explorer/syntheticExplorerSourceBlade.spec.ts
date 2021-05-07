@@ -1,4 +1,4 @@
-import ExplorerHelper from '../../../Helpers/SyntheticExplorer';
+import ExplorerHelper from '../../../Helpers/SyntheticExplorerHelper';
 import ExplorerLocator from '../../../pageobjects/explorer';
 import BuildUrls from '../../../utilities/buildUrls';
 import Login from '../../../pageobjects/loginpage';
@@ -65,7 +65,8 @@ describe('Test Cases For Synthetic Source Balde', function () {
 
         cy.visit(urlBuild.ExplorerUrl()).then(() => {
             cy.wait(1000);
-            cy.get(explorerSelctor.searchBoxInSouceBladeExplorer()).eq(1).should('be.visible').type('Test{Enter}');
+            explorer.searchTestInSourceSelector('Test');
+            //cy.get(explorerSelctor.searchBoxInSouceBladeExplorer()).eq(1).should('be.visible').type('Test{Enter}');
             explorerSelctor.sourceBladeCommonTextSelector().eq(0).should('contain.text', 'DoNotDelete-DataStore');
             cy.get(explorerSelctor.testTextselectorFromSourceBlade()).eq(0).should('contain.text', 'Test');
             

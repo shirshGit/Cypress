@@ -1,0 +1,24 @@
+{
+	"data": {
+		"insights": {
+			"tracepoints": [
+				{
+					"id": 1154,
+					"name": "TR-Content-Type",
+					"__typename": "InsightType"
+				},
+				{
+					"id": 8377,
+					"name": "TR-GetDate",
+					"__typename": "InsightType"
+				},
+				{
+					"id": 9514,
+					"name": "TR-UserAgent",
+					"__typename": "InsightType"
+				}
+			],
+			"__typename": "InsightsResponseType"
+		}
+	}
+}
