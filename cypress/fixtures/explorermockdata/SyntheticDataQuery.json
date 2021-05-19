@@ -1,0 +1,587 @@
+{
+	"data": {
+		"Page": {
+			"analyticsResponses": [
+				{
+					"startTime": "2021-05-10T05:01:13.9318792Z",
+					"endTime": "2021-05-11T05:01:13.9318792Z",
+					"clientTimeZone": 4,
+					"metrics": [
+						89,
+						61
+					],
+					"intervals": 96,
+					"dimensions": [
+						17,
+						16
+					],
+					"items": [
+						{
+							"dateTime": "2021-05-10T06:15:00Z",
+							"values": [
+								1918,
+								1
+							],
+							"reportDate": "2021-05-10T06:00:00Z",
+							"dimensions": [
+								{
+									"id": 0,
+									"name": "202105100615",
+									"type": 17,
+									"__typename": "DimensionResponseType"
+								},
+								{
+									"id": 187012,
+									"name": "Web_Chrome_Test",
+									"type": 16,
+									"__typename": "DimensionResponseType"
+								}
+							],
+							"__typename": "AnalyticsResponseItemType"
+						},
+						{
+							"dateTime": "2021-05-10T07:00:00Z",
+							"values": [
+								3649,
+								1
+							],
+							"reportDate": "2021-05-10T06:00:00Z",
+							"dimensions": [
+								{
+									"id": 0,
+									"name": "202105100700",
+									"type": 17,
+									"__typename": "DimensionResponseType"
+								},
+								{
+									"id": 187012,
+									"name": "Web_Chrome_Test",
+									"type": 16,
+									"__typename": "DimensionResponseType"
+								}
+							],
+							"__typename": "AnalyticsResponseItemType"
+						},
+						{
+							"dateTime": "2021-05-10T08:30:00Z",
+							"values": [
+								3395,
+								1
+							],
+							"reportDate": "2021-05-10T06:00:00Z",
+							"dimensions": [
+								{
+									"id": 0,
+									"name": "202105100830",
+									"type": 17,
+									"__typename": "DimensionResponseType"
+								},
+								{
+									"id": 187012,
+									"name": "Web_Chrome_Test",
+									"type": 16,
+									"__typename": "DimensionResponseType"
+								}
+							],
+							"__typename": "AnalyticsResponseItemType"
+						},
+						{
+							"dateTime": "2021-05-10T09:15:00Z",
+							"values": [
+								1900,
+								1
+							],
+							"reportDate": "2021-05-10T09:00:00Z",
+							"dimensions": [
+								{
+									"id": 0,
+									"name": "202105100915",
+									"type": 17,
+									"__typename": "DimensionResponseType"
+								},
+								{
+									"id": 187012,
+									"name": "Web_Chrome_Test",
+									"type": 16,
+									"__typename": "DimensionResponseType"
+								}
+							],
+							"__typename": "AnalyticsResponseItemType"
+						},
+						{
+							"dateTime": "2021-05-10T10:00:00Z",
+							"values": [
+								4370,
+								1
+							],
+							"reportDate": "2021-05-10T09:00:00Z",
+							"dimensions": [
+								{
+									"id": 0,
+									"name": "202105101000",
+									"type": 17,
+									"__typename": "DimensionResponseType"
+								},
+								{
+									"id": 187012,
+									"name": "Web_Chrome_Test",
+									"type": 16,
+									"__typename": "DimensionResponseType"
+								}
+							],
+							"__typename": "AnalyticsResponseItemType"
+						},
+						{
+							"dateTime": "2021-05-10T11:30:00Z",
+							"values": [
+								3393,
+								1
+							],
+							"reportDate": "2021-05-10T09:00:00Z",
+							"dimensions": [
+								{
+									"id": 0,
+									"name": "202105101130",
+									"type": 17,
+									"__typename": "DimensionResponseType"
+								},
+								{
+									"id": 187012,
+									"name": "Web_Chrome_Test",
+									"type": 16,
+									"__typename": "DimensionResponseType"
+								}
+							],
+							"__typename": "AnalyticsResponseItemType"
+						},
+						{
+							"dateTime": "2021-05-10T12:15:00Z",
+							"values": [
+								2094,
+								1
+							],
+							"reportDate": "2021-05-10T12:00:00Z",
+							"dimensions": [
+								{
+									"id": 0,
+									"name": "202105101215",
+									"type": 17,
+									"__typename": "DimensionResponseType"
+								},
+								{
+									"id": 187012,
+									"name": "Web_Chrome_Test",
+									"type": 16,
+									"__typename": "DimensionResponseType"
+								}
+							],
+							"__typename": "AnalyticsResponseItemType"
+						},
+						{
+							"dateTime": "2021-05-10T13:00:00Z",
+							"values": [
+								3288,
+								1
+							],
+							"reportDate": "2021-05-10T12:00:00Z",
+							"dimensions": [
+								{
+									"id": 0,
+									"name": "202105101300",
+									"type": 17,
+									"__typename": "DimensionResponseType"
+								},
+								{
+									"id": 187012,
+									"name": "Web_Chrome_Test",
+									"type": 16,
+									"__typename": "DimensionResponseType"
+								}
+							],
+							"__typename": "AnalyticsResponseItemType"
+						},
+						{
+							"dateTime": "2021-05-10T14:30:00Z",
+							"values": [
+								3097,
+								1
+							],
+							"reportDate": "2021-05-10T12:00:00Z",
+							"dimensions": [
+								{
+									"id": 0,
+									"name": "202105101430",
+									"type": 17,
+									"__typename": "DimensionResponseType"
+								},
+								{
+									"id": 187012,
+									"name": "Web_Chrome_Test",
+									"type": 16,
+									"__typename": "DimensionResponseType"
+								}
+							],
+							"__typename": "AnalyticsResponseItemType"
+						},
+						{
+							"dateTime": "2021-05-10T15:15:00Z",
+							"values": [
+								1768,
+								1
+							],
+							"reportDate": "2021-05-10T15:00:00Z",
+							"dimensions": [
+								{
+									"id": 0,
+									"name": "202105101515",
+									"type": 17,
+									"__typename": "DimensionResponseType"
+								},
+								{
+									"id": 187012,
+									"name": "Web_Chrome_Test",
+									"type": 16,
+									"__typename": "DimensionResponseType"
+								}
+							],
+							"__typename": "AnalyticsResponseItemType"
+						},
+						{
+							"dateTime": "2021-05-10T16:00:00Z",
+							"values": [
+								2100,
+								1
+							],
+							"reportDate": "2021-05-10T15:00:00Z",
+							"dimensions": [
+								{
+									"id": 0,
+									"name": "202105101600",
+									"type": 17,
+									"__typename": "DimensionResponseType"
+								},
+								{
+									"id": 187012,
+									"name": "Web_Chrome_Test",
+									"type": 16,
+									"__typename": "DimensionResponseType"
+								}
+							],
+							"__typename": "AnalyticsResponseItemType"
+						},
+						{
+							"dateTime": "2021-05-10T17:30:00Z",
+							"values": [
+								4194,
+								1
+							],
+							"reportDate": "2021-05-10T15:00:00Z",
+							"dimensions": [
+								{
+									"id": 0,
+									"name": "202105101730",
+									"type": 17,
+									"__typename": "DimensionResponseType"
+								},
+								{
+									"id": 187012,
+									"name": "Web_Chrome_Test",
+									"type": 16,
+									"__typename": "DimensionResponseType"
+								}
+							],
+							"__typename": "AnalyticsResponseItemType"
+						},
+						{
+							"dateTime": "2021-05-10T18:15:00Z",
+							"values": [
+								1919,
+								1
+							],
+							"reportDate": "2021-05-10T18:00:00Z",
+							"dimensions": [
+								{
+									"id": 0,
+									"name": "202105101815",
+									"type": 17,
+									"__typename": "DimensionResponseType"
+								},
+								{
+									"id": 187012,
+									"name": "Web_Chrome_Test",
+									"type": 16,
+									"__typename": "DimensionResponseType"
+								}
+							],
+							"__typename": "AnalyticsResponseItemType"
+						},
+						{
+							"dateTime": "2021-05-10T19:00:00Z",
+							"values": [
+								3497,
+								1
+							],
+							"reportDate": "2021-05-10T18:00:00Z",
+							"dimensions": [
+								{
+									"id": 0,
+									"name": "202105101900",
+									"type": 17,
+									"__typename": "DimensionResponseType"
+								},
+								{
+									"id": 187012,
+									"name": "Web_Chrome_Test",
+									"type": 16,
+									"__typename": "DimensionResponseType"
+								}
+							],
+							"__typename": "AnalyticsResponseItemType"
+						},
+						{
+							"dateTime": "2021-05-10T20:30:00Z",
+							"values": [
+								2995,
+								1
+							],
+							"reportDate": "2021-05-10T18:00:00Z",
+							"dimensions": [
+								{
+									"id": 0,
+									"name": "202105102030",
+									"type": 17,
+									"__typename": "DimensionResponseType"
+								},
+								{
+									"id": 187012,
+									"name": "Web_Chrome_Test",
+									"type": 16,
+									"__typename": "DimensionResponseType"
+								}
+							],
+							"__typename": "AnalyticsResponseItemType"
+						},
+						{
+							"dateTime": "2021-05-10T21:15:00Z",
+							"values": [
+								2197,
+								1
+							],
+							"reportDate": "2021-05-10T21:00:00Z",
+							"dimensions": [
+								{
+									"id": 0,
+									"name": "202105102115",
+									"type": 17,
+									"__typename": "DimensionResponseType"
+								},
+								{
+									"id": 187012,
+									"name": "Web_Chrome_Test",
+									"type": 16,
+									"__typename": "DimensionResponseType"
+								}
+							],
+							"__typename": "AnalyticsResponseItemType"
+						},
+						{
+							"dateTime": "2021-05-10T22:00:00Z",
+							"values": [
+								2636,
+								1
+							],
+							"reportDate": "2021-05-10T21:00:00Z",
+							"dimensions": [
+								{
+									"id": 0,
+									"name": "202105102200",
+									"type": 17,
+									"__typename": "DimensionResponseType"
+								},
+								{
+									"id": 187012,
+									"name": "Web_Chrome_Test",
+									"type": 16,
+									"__typename": "DimensionResponseType"
+								}
+							],
+							"__typename": "AnalyticsResponseItemType"
+						},
+						{
+							"dateTime": "2021-05-10T23:30:00Z",
+							"values": [
+								2995,
+								1
+							],
+							"reportDate": "2021-05-10T21:00:00Z",
+							"dimensions": [
+								{
+									"id": 0,
+									"name": "202105102330",
+									"type": 17,
+									"__typename": "DimensionResponseType"
+								},
+								{
+									"id": 187012,
+									"name": "Web_Chrome_Test",
+									"type": 16,
+									"__typename": "DimensionResponseType"
+								}
+							],
+							"__typename": "AnalyticsResponseItemType"
+						},
+						{
+							"dateTime": "2021-05-11T00:15:00Z",
+							"values": [
+								7783,
+								1
+							],
+							"reportDate": "2021-05-11T00:00:00Z",
+							"dimensions": [
+								{
+									"id": 0,
+									"name": "202105110015",
+									"type": 17,
+									"__typename": "DimensionResponseType"
+								},
+								{
+									"id": 187012,
+									"name": "Web_Chrome_Test",
+									"type": 16,
+									"__typename": "DimensionResponseType"
+								}
+							],
+							"__typename": "AnalyticsResponseItemType"
+						},
+						{
+							"dateTime": "2021-05-11T01:00:00Z",
+							"values": [
+								2805,
+								1
+							],
+							"reportDate": "2021-05-11T00:00:00Z",
+							"dimensions": [
+								{
+									"id": 0,
+									"name": "202105110100",
+									"type": 17,
+									"__typename": "DimensionResponseType"
+								},
+								{
+									"id": 187012,
+									"name": "Web_Chrome_Test",
+									"type": 16,
+									"__typename": "DimensionResponseType"
+								}
+							],
+							"__typename": "AnalyticsResponseItemType"
+						},
+						{
+							"dateTime": "2021-05-11T02:30:00Z",
+							"values": [
+								3094,
+								1
+							],
+							"reportDate": "2021-05-11T00:00:00Z",
+							"dimensions": [
+								{
+									"id": 0,
+									"name": "202105110230",
+									"type": 17,
+									"__typename": "DimensionResponseType"
+								},
+								{
+									"id": 187012,
+									"name": "Web_Chrome_Test",
+									"type": 16,
+									"__typename": "DimensionResponseType"
+								}
+							],
+							"__typename": "AnalyticsResponseItemType"
+						},
+						{
+							"dateTime": "2021-05-11T03:15:00Z",
+							"values": [
+								2009,
+								1
+							],
+							"reportDate": "2021-05-11T03:00:00Z",
+							"dimensions": [
+								{
+									"id": 0,
+									"name": "202105110315",
+									"type": 17,
+									"__typename": "DimensionResponseType"
+								},
+								{
+									"id": 187012,
+									"name": "Web_Chrome_Test",
+									"type": 16,
+									"__typename": "DimensionResponseType"
+								}
+							],
+							"__typename": "AnalyticsResponseItemType"
+						},
+						{
+							"dateTime": "2021-05-11T04:00:00Z",
+							"values": [
+								3473,
+								1
+							],
+							"reportDate": "2021-05-11T03:00:00Z",
+							"dimensions": [
+								{
+									"id": 0,
+									"name": "202105110400",
+									"type": 17,
+									"__typename": "DimensionResponseType"
+								},
+								{
+									"id": 187012,
+									"name": "Web_Chrome_Test",
+									"type": 16,
+									"__typename": "DimensionResponseType"
+								}
+							],
+							"__typename": "AnalyticsResponseItemType"
+						}
+					],
+					"summaryItems": [
+						{
+							"dateTime": "0001-01-01T00:00:00",
+							"values": [
+								3068.22,
+								23
+							],
+							"dimensions": [
+								{
+									"id": 0,
+									"name": "",
+									"type": 17,
+									"__typename": "DimensionResponseType"
+								},
+								{
+									"id": 187012,
+									"name": "Web_Chrome_Test",
+									"type": 16,
+									"__typename": "DimensionResponseType"
+								}
+							],
+							"__typename": "AnalyticsResponseItemType"
+						}
+					],
+					"hasMoreRecords": false,
+					"totalRecordsCount": 23,
+					"totalSummaryRecordsCount": 1,
+					"samplingPercentage": 100,
+					"__typename": "AnalyticsResponseType"
+				}
+			],
+			"lookupData": {
+				"tests": [],
+				"__typename": "SyntheticLookupDataType"
+			},
+			"__typename": "SyntheticAnalyticsResponseType"
+		}
+	}
+}

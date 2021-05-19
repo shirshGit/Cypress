@@ -38,7 +38,9 @@
 					},
 					{
 						"displayTestType": 9,
-						"displayMonitorTypes": [],
+						"displayMonitorTypes": [
+							25
+						],
 						"__typename": "TestTypeToMonitorTypes"
 					},
 					{
@@ -137,18 +139,6 @@
 					{
 						"displayTestType": 20,
 						"displayMonitorTypes": [],
-						"__typename": "TestTypeToMonitorTypes"
-					},
-					{
-						"displayTestType": 21,
-						"displayMonitorTypes": [
-							8,
-							23,
-							11,
-							9,
-							14,
-							29
-						],
 						"__typename": "TestTypeToMonitorTypes"
 					}
 				],

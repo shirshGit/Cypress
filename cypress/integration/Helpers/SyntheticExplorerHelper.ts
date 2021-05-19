@@ -1,11 +1,7 @@
-import ExplorerLocator from '../pageobjects/explorer';
+import ExplorerLocator from '../pageobjects/explorerPageLocators';
 const explorerSelctor = new ExplorerLocator();
 
 export default class syntheticExplorerHelper {
-
-    // environmentForScriptRun : string = Cypress.env('environment');
-    // graphQLUrl : string = Cypress.env('graphQLUrl');
-    // dataNeedMocking : string = Cypress.env('DataMock');
 
     /*
         This function is to mock graphQL requests for Explorer Page
@@ -17,7 +13,7 @@ export default class syntheticExplorerHelper {
             let opName = req.body.operationName;
             switch (opName) {
                 case 'GetUserIdentity':
-                    if (environmentForScriptRun === 'localhost' ) {
+                    if (environmentForScriptRun === 'localhost') {
                         if (mockDataQueryFileDict['GetUserIdentity'] === null) {
                             if (req.body.operationName === 'GetUserIdentity') {
                                 req.reply((res) => {
@@ -37,7 +33,28 @@ export default class syntheticExplorerHelper {
                     }
                     break;
 
-                    case 'syntheticSource':
+                    case 'GetContactsForCurrentUser':
+                        if (mockDataQueryFileDict['GetContactsForCurrentUser'] === null) {
+                            if (req.body.operationName === 'GetContactsForCurrentUser') {
+                                req.reply((res) => {
+                                    res.send({ fixture: 'explorermockdata/GetContactsForCurrentUser.json' });
+    
+                                });
+                            }
+                        }
+                        else {
+                            let customMockFile = 'explorermockdata/' + mockDataQueryFileDict[opName];
+                            req.reply((res) => {
+                                //'id' : '2'
+                                res.send({ fixture: customMockFile });
+    
+                            });
+    
+                        }
+                        break;
+    
+
+                case 'syntheticSource':
                     if (mockDataQueryFileDict['syntheticSource'] === null) {
                         if (req.body.operationName === 'syntheticSource') {
                             req.reply((res) => {
@@ -57,7 +74,28 @@ export default class syntheticExplorerHelper {
                     }
                     break;
 
-                    case 'GetTimezones':
+
+                case 'getQuickChartsBySourceType':
+                    if (mockDataQueryFileDict['getQuickChartsBySourceType'] === null) {
+                        if (req.body.operationName === 'getQuickChartsBySourceType') {
+                            req.reply((res) => {
+                                res.send({ fixture: 'explorermockdata/syntheticSource.json' });
+
+                            });
+                        }
+                    }
+                    else {
+                        let customMockFile = 'explorermockdata/' + mockDataQueryFileDict[opName];
+                        req.reply((res) => {
+                            //'id' : '2'
+                            res.send({ fixture: customMockFile });
+
+                        });
+
+                    }
+                    break;
+
+                case 'GetTimezones':
                     if (mockDataQueryFileDict['GetTimezones'] === null) {
                         if (req.body.operationName === 'GetTimezones') {
                             req.reply((res) => {
@@ -77,11 +115,11 @@ export default class syntheticExplorerHelper {
                     }
                     break;
 
-                    case 'insights':
-                    if (mockDataQueryFileDict['insights'] === null) {
-                        if (req.body.operationName === 'insights') {
+                case 'UserVisualizationQuery':
+                    if (mockDataQueryFileDict['UserVisualizationQuery'] === null) {
+                        if (req.body.operationName === 'UserVisualizationQuery') {
                             req.reply((res) => {
-                                res.send({ fixture: 'explorermockdata/insights.json' });
+                                res.send({ fixture: 'explorermockdata/UserVisualizationQuery.json' });
 
                             });
                         }
@@ -135,8 +173,7 @@ export default class syntheticExplorerHelper {
                             });
                         }
 
-                        else if(req.body.operationName.reportType === '5')
-                        {
+                        else if (req.body.operationName.reportType === '5') {
                             let customMockFile = 'explorermockdata/' + mockDataQueryFileDict[opName]['reportTypeFive'];
                             req.reply((res) => {
                                 res.send({ fixture: customMockFile });
@@ -144,16 +181,14 @@ export default class syntheticExplorerHelper {
                             });
                         }
 
-                        else if(req.body.operationName.reportType === '6')
-                        {
+                        else if (req.body.operationName.reportType === '6') {
                             let customMockFile = 'explorermockdata/' + mockDataQueryFileDict[opName]['reportTypeSix'];
                             req.reply((res) => {
                                 res.send({ fixture: customMockFile });
 
                             });
                         }
-                        else if(req.body.operationName.reportType === '4')
-                        {
+                        else if (req.body.operationName.reportType === '4') {
                             let customMockFile = 'explorermockdata/' + mockDataQueryFileDict[opName]['reportTypeFour'];
                             req.reply((res) => {
                                 res.send({ fixture: customMockFile });
@@ -164,12 +199,112 @@ export default class syntheticExplorerHelper {
 
                     break;
 
-                    case 'zoneBasics' :
-                        if (mockDataQueryFileDict['zoneBasics'] === null) {
-                            if (req.body.operationName === 'zoneBasics') {
-                                req.reply((res) => {
-                                    res.send({ fixture: 'explorermockdata/zoneBasics.json' });
+                case 'zoneBasics':
+                    if (mockDataQueryFileDict['zoneBasics'] === null) {
+                        if (req.body.operationName === 'zoneBasics') {
+                            req.reply((res) => {
+                                res.send({ fixture: 'explorermockdata/zoneBasics.json' });
 
+                            });
+                        }
+                    }
+                    else {
+                        let customMockFile = 'explorermockdata/' + mockDataQueryFileDict[opName];
+                        req.reply((res) => {
+                            //'id' : '2'
+                            res.send({ fixture: customMockFile });
+
+                        });
+
+                    }
+                    break;
+
+                case 'dateTimeInfoQuery':
+                    if (mockDataQueryFileDict['dateTimeInfoQuery'] === null) {
+                        if (req.body.operationName === 'dateTimeInfoQuery') {
+                            req.reply((res) => {
+                                res.send({ fixture: 'explorermockdata/dateTimeInfoQuery.json' });
+
+                            });
+                        }
+                    }
+                    else {
+                        let customMockFile = 'explorermockdata/' + mockDataQueryFileDict[opName];
+                        req.reply((res) => {
+                            //'id' : '2'
+                            res.send({ fixture: customMockFile });
+
+                        });
+
+                    }
+                    break;
+
+                case 'GetTestTypesWithMonitorsForDivision':
+                    if (mockDataQueryFileDict['GetTestTypesWithMonitorsForDivision'] === null) {
+                        if (req.body.operationName === 'GetTestTypesWithMonitorsForDivision') {
+                            req.reply((res) => {
+                                res.send({ fixture: 'explorermockdata/GetTestTypesWithMonitorsForDivision.json' });
+
+                            });
+                        }
+                    }
+                    else {
+                        let customMockFile = 'explorermockdata/' + mockDataQueryFileDict[opName];
+                        req.reply((res) => {
+                            //'id' : '2'
+                            res.send({ fixture: customMockFile });
+
+                        });
+
+                    }
+                    break;
+
+                case 'InsightsExplorerDimensionSelector':
+                    if (mockDataQueryFileDict['InsightsExplorerDimensionSelector'] === null) {
+                        if (req.body.operationName === 'InsightsExplorerDimensionSelector') {
+                            req.reply((res) => {
+                                res.send({ fixture: 'explorermockdata/InsightsExplorerDimensionSelector.json' });
+
+                            });
+                        }
+                    }
+                    else {
+                        let customMockFile = 'explorermockdata/' + mockDataQueryFileDict[opName];
+                        req.reply((res) => {
+                            //'id' : '2'
+                            res.send({ fixture: customMockFile });
+
+                        });
+
+                    }
+                    break;
+
+                case 'SyntheticDataQuery':
+                    if (mockDataQueryFileDict['SyntheticDataQuery'] === null) {
+                        if (req.body.operationName === 'SyntheticDataQuery') {
+                            req.reply((res) => {
+                                res.send({ fixture: 'explorermockdata/SyntheticDataQuery.json' });
+
+                            });
+                        }
+                    }
+                    else {
+                        let customMockFile = 'explorermockdata/' + mockDataQueryFileDict[opName];
+                        req.reply((res) => {
+                            //'id' : '2'
+                            res.send({ fixture: customMockFile });
+
+                        });
+
+                    }
+                    break;
+
+                    case 'utcDateTimeInfoQuery':
+                        if (mockDataQueryFileDict['utcDateTimeInfoQuery'] === null) {
+                            if (req.body.operationName === 'utcDateTimeInfoQuery') {
+                                req.reply((res) => {
+                                    res.send({ fixture: 'explorermockdata/utcDateTimeInfoQuery.json' });
+    
                                 });
                             }
                         }
@@ -178,71 +313,12 @@ export default class syntheticExplorerHelper {
                             req.reply((res) => {
                                 //'id' : '2'
                                 res.send({ fixture: customMockFile });
-
+    
                             });
-
+    
                         }
                         break;
-
-                        case 'dateTimeInfoQuery' :
-                        if (mockDataQueryFileDict['dateTimeInfoQuery'] === null) {
-                            if (req.body.operationName === 'dateTimeInfoQuery') {
-                                req.reply((res) => {
-                                    res.send({ fixture: 'explorermockdata/dateTimeInfoQuery.json' });
-
-                                });
-                            }
-                        }
-                        else {
-                            let customMockFile = 'explorermockdata/' + mockDataQueryFileDict[opName];
-                            req.reply((res) => {
-                                //'id' : '2'
-                                res.send({ fixture: customMockFile });
-
-                            });
-
-                        }
-                        break;
-
-                        case 'GetTestTypesWithMonitorsForDivision' :
-                        if (mockDataQueryFileDict['GetTestTypesWithMonitorsForDivision'] === null) {
-                            if (req.body.operationName === 'GetTestTypesWithMonitorsForDivision') {
-                                req.reply((res) => {
-                                    res.send({ fixture: 'explorermockdata/GetTestTypesWithMonitorsForDivision.json' });
-
-                                });
-                            }
-                        }
-                        else {
-                            let customMockFile = 'explorermockdata/' + mockDataQueryFileDict[opName];
-                            req.reply((res) => {
-                                //'id' : '2'
-                                res.send({ fixture: customMockFile });
-
-                            });
-
-                        }
-                        break;
-
-                        case 'InsightsExplorerDimensionSelector' :
-                            if (mockDataQueryFileDict['InsightsExplorerDimensionSelector'] === null) {
-                                if (req.body.operationName === 'InsightsExplorerDimensionSelector') {
-                                    req.reply((res) => {
-                                        res.send({ fixture: 'explorermockdata/InsightsExplorerDimensionSelector.json' });
-    
-                                    });
-                                }
-                            }
-                            else {
-                                let customMockFile = 'explorermockdata/' + mockDataQueryFileDict[opName];
-                                req.reply((res) => {
-                                    //'id' : '2'
-                                    res.send({ fixture: customMockFile });
-    
-                                });
-    
-                            }
-                            break;
+        
 
 
                 default:
@@ -255,54 +331,63 @@ export default class syntheticExplorerHelper {
     /*
         This function is to mock all the graphQL request with default data
     */
-    mockDefaultDataForAllRequestsForExplorer()
-    {
+    mockDefaultDataForAllRequestsForExplorer() {
         const mockDataExplorer = {
             'GetUserIdentity': null,
+            'GetContactsForCurrentUser' : null,
             'syntheticSource': null,
+            'getQuickChartsBySourceType' : null,
             'GetTimezones': null,
-            'insights': null,
+            'UserVisualizationQuery' : null,
             'metricsData': null,
             'zoneBasics': null,
-            'GetTestTypesWithMonitorsForDivision' : null,
-            'dateTimeInfoQuery' : null
+            'GetTestTypesWithMonitorsForDivision': null,
+            'dateTimeInfoQuery': null,
+            'InsightsExplorerDimensionSelector' : null,
+            'SyntheticDataQuery' : null,
+            'utcDateTimeInfoQuery' : null
         };
 
         const graphQLUrl = Cypress.env('graphQLUrl')
-        this.mockDataForExplorerPageLoad(mockDataExplorer, graphQLUrl);       
+        this.mockDataForExplorerPageLoad(mockDataExplorer, graphQLUrl);
     }
 
-    mockDataForTestTypeAndMonitorType()
-    {
+    mockDataForTestTypeAndMonitorType() {
         const mockDataExplorer = {
             'GetUserIdentity': null,
+            'GetContactsForCurrentUser' : null,
             'syntheticSource': 'DifferentMonitorTypeSourceBlade.json',
+            'getQuickChartsBySourceType' : null,
             'GetTimezones': null,
-            'insights': null,
+            'UserVisualizationQuery' : null,
             'metricsData': null,
             'zoneBasics': null,
-            'GetTestTypesWithMonitorsForDivision' : null,
-            'dateTimeInfoQuery' : null
+            'GetTestTypesWithMonitorsForDivision': null,
+            'dateTimeInfoQuery': null,
+            'InsightsExplorerDimensionSelector' : null,
+            'SyntheticDataQuery' : null,
+            'utcDateTimeInfoQuery' : null
 
         }
 
         const graphQLUrl = Cypress.env('graphQLUrl')
-        this.mockDataForExplorerPageLoad(mockDataExplorer, graphQLUrl); 
+        this.mockDataForExplorerPageLoad(mockDataExplorer, graphQLUrl);
     }
 
-    searchTestInSourceSelector(testName: string)
-    {
-        cy.get(explorerSelctor.searchBoxInSouceBladeExplorer()).eq(1).should('be.visible').type(testName + '{Enter}');
+    searchTestInSourceSelector(testName: string) {
+        cy.xpath(explorerSelctor.searchBoxInSouceBladeExplorerXpath()).should('be.visible').type(testName + '{Enter}');
     }
 
-    selectSearchedItemFromSourceBlade()
-    {
+    selectSearchedItemFromSourceBlade() {
         cy.get(explorerSelctor.testSelectorAfterSearchSourceBlade()).click();
         cy.get(explorerSelctor.selectButtonInSourceSelector()).click();
     }
 
-    clickOnColumnByDropDown()
-    {
-        cy.get(explorerSelctor.coloumnByDropDownButton()).click();
+    clickOnColumnByDropDown() {
+        cy.xpath(explorerSelctor.coloumnByDropDownButtonXpath()).click();
+    }
+
+    clickOnMetricListInDimention() {
+        cy.xpath(explorerSelctor.metricsListLocatorXpath()).click();
     }
 }

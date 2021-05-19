@@ -1,5 +1,5 @@
 import ExplorerHelper from '../../../Helpers/SyntheticExplorerHelper';
-import ExplorerLocator from '../../../pageobjects/explorer';
+import ExplorerLocator from '../../../pageobjects/explorerPageLocators';
 import BuildUrls from '../../../utilities/buildUrls';
 import Login from '../../../pageobjects/loginpage';
 import LoginHelper from '../../../Helpers/LoginHelper';

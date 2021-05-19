@@ -1,0 +1,54 @@
+{
+	"data": {
+		"quickChart": [
+			{
+				"id": 1,
+				"name": "DNS",
+				"divisionId": null,
+				"__typename": "QuickChartResponseType"
+			},
+			{
+				"id": 2,
+				"name": "Server Connection",
+				"divisionId": null,
+				"__typename": "QuickChartResponseType"
+			},
+			{
+				"id": 3,
+				"name": "Page Performance",
+				"divisionId": null,
+				"__typename": "QuickChartResponseType"
+			},
+			{
+				"id": 4,
+				"name": "Request Components",
+				"divisionId": null,
+				"__typename": "QuickChartResponseType"
+			},
+			{
+				"id": 5,
+				"name": "Server Connection by Location",
+				"divisionId": null,
+				"__typename": "QuickChartResponseType"
+			},
+			{
+				"id": 6,
+				"name": "DNS by Location",
+				"divisionId": null,
+				"__typename": "QuickChartResponseType"
+			},
+			{
+				"id": 7,
+				"name": "Request Components by Location",
+				"divisionId": null,
+				"__typename": "QuickChartResponseType"
+			},
+			{
+				"id": 13,
+				"name": "&lt;script&gt;alert(&quot;hello&quot;)&lt;/script&gt;",
+				"divisionId": null,
+				"__typename": "QuickChartResponseType"
+			}
+		]
+	}
+}

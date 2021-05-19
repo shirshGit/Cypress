@@ -1,0 +1,66 @@
+{
+	"data": {
+		"userVisualization": [
+			{
+				"id": 7,
+				"name": "System_CV_Explorer",
+				"changeDate": "2021-05-10T09:46:22.97Z",
+				"changedBy": {
+					"id": 7538,
+					"name": "Disha Saxena",
+					"__typename": "ContactType"
+				},
+				"createdBy": {
+					"id": 7538,
+					"name": "Disha Saxena",
+					"__typename": "ContactType"
+				},
+				"dashboardCount": 0,
+				"description": "",
+				"iconType": 2,
+				"includeExplorer": true,
+				"isRawData": false,
+				"libraryType": 1,
+				"script": "<script type='text/javascript'>\n        document.addEventListener('DOMContentLoaded', function (event) {\n            var selector = CPVisualization.getContainerSelector();\n            var summary = CPVisualization.getSummaryData();\n\n            var headers = summary.headers;\n            var metricCount = headers.metrics.length;\n            var hasDimension = !!headers.dimension;\n            var hasBreakdown1 = !!headers.breakdown1;\n            var hasBreakdown2 = !!headers.breakdown2;\n\n            var data = summary.data;\n            data.sort(function (a, b) {\n                if (hasBreakdown1) {\n                    return d3.ascending(a.breakdown1, b.breakdown1);\n                }\n\n                if (hasBreakdown2) {\n                    return d3.ascending(a.breakdown2, b.breakdown2);\n                }\n                if (hasDimension) {\n                    return d3.ascending(a.dimension, b.dimension);\n                }\n\n                return d3.ascending(a.metrics[0], b.metrics[0]);\n            });\n\n            d3.select(selector).selectAll(\"th\").on(\"click\", null);\n            d3.select(selector).html(\"\");\n\n            var table = d3.select(selector).append(\"table\").attr(\"class\", \"bar-tbl\");\n\n            // header row\n            var tr = table.append(\"tr\");\n\n            if (hasDimension) {\n                tr.append(\"th\")\n                    .attr(\"data-sort\", \"d\")\n                    .append(\"span\")\n                    .text(headers.dimension);\n            }\n\n            if (hasBreakdown1) {\n                tr.append(\"th\")\n                    .attr(\"data-sort\", \"b1\")\n                    .append(\"span\")\n                    .text(headers.breakdown1);\n            }\n\n            if (hasBreakdown2) {\n                tr.append(\"th\")\n                    .attr(\"data-sort\", \"b2\")\n                    .append(\"span\")\n                    .text(headers.breakdown2);\n            }\n\n            for (var i = 0; i < metricCount; i++) {\n                tr.append(\"th\")\n                    .attr(\"data-sort\", i)\n                    .attr(\"colspan\", \"2\")\n                    .append(\"span\")\n                    .text(headers.metrics[i])\n            }\n\n            var headerCells = table.selectAll(\"th\");\n\n            table.select(\"th\").select(\"span\").attr(\"class\", \"sort-asc\");\n\n            headerCells.on(\"click\", function () {\n                var el = d3.select(this);\n                var sortBy = el.attr(\"data-sort\");\n\n                var func;\n                var span = el.select(\"span\");\n\n                if ($(span[0]).hasClass(\"sort-asc\")) {\n                    func = d3.descending;\n                    span.attr(\"class\", \"sort-desc\");\n                }\n                else {\n                    func = d3.ascending;\n\n                    if (!$(span[0]).hasClass(\"sort-desc\")) {\n                        headerCells.selectAll(\"span\").attr(\"class\", \"\");\n                    }\n\n                    span.attr(\"class\", \"sort-asc\");\n                }\n\n                tr.sort(function (a, b) {\n                    if (sortBy == \"b1\") {\n                        return func(a.breakdown1, b.breakdown1);\n                    }\n\n                    if (sortBy == \"b2\") {\n                        return func(a.breakdown2, b.breakdown2);\n                    }\n\n                    if (sortBy == \"d\") {\n                        return func(a.dimension, b.dimension);\n                    }\n\n                    var aval = a.metrics[sortBy];\n                    var bval = b.metrics[sortBy];\n\n                    if (!aval) { aval = -1; }\n                    if (!bval) { bval = -1; }\n\n                    return func(parseFloat(aval), parseFloat(bval));\n                });\n            })\n\n            // data rows\n            tr = table.selectAll(\"tr.data\")\n                .data(data)\n                .enter()\n                .append(\"tr\")\n                .attr(\"class\", \"datarow\");\n\n            if (hasDimension) {\n                tr.append(\"td\").text(function (d) {\n                    return d.dimension;\n                }).attr(\"class\", \"breakdown\");\n            }\n\n            if (hasBreakdown1) {\n                tr.append(\"td\").text(function (d) {\n                    return d.breakdown1;\n                }).attr(\"class\", \"breakdown\");\n            }\n\n            if (hasBreakdown2) {\n                tr.append(\"td\").text(function (d) {\n                    return d.breakdown2;\n                }).attr(\"class\", \"breakdown\");\n            }\n\n            var td;\n            for (var i = 0; i < metricCount; i++) {\n                tr.append(\"td\").attr(\"class\", \"value\").text(function (d) {\n                    var val = d.metrics[i];\n                    if (val == null) {\n                        return \"NA\";\n                    }\n\n                    return Math.round(val * 100) / 100;\n                });\n\n                td = tr.append(\"td\").attr(\"class\", \"chart\").attr(\"width\", (100 / metricCount) + \"%\");\n                td.append(\"div\").attr(\"class\", \"bar num\" + i);\n            }\n\n            for (var i = 0; i < metricCount; i++) {\n                (function (index) {\n                    var max = Math.max.apply(Math, data.map(function (d) {\n                        return parseFloat(d.metrics[index]) || 0;\n                    }));\n\n                    tr.select(\"div.bar.num\" + index)\n                        .style(\"width\", \"0%\")\n                        .transition()\n                        .duration(500)\n                        .style(\"width\", function (d) {\n                            var val = parseFloat(d.metrics[index]);\n\n                            if (val > 0) {\n                                return (val / max * 100) + \"%\";\n                            }\n\n                            return \"0%\";\n                        });\n                })(i);\n            }\n\n        });\n\n\n\t</script>\n\n\t<style>      \ntable.bar-tbl {\n\t\t\tfont: 12px sans-serif;\n\t\t\tvertical-align: middle;\n\t\t\ttext-align: left;\n\t\t\tborder-collapse: collapse;\n            white-space: nowrap;            \n\t\t}\n\n        table.bar-tbl td {\n            padding: 2px 30px 2px 0px;\n        }     \n\t\ttable.bar-tbl div.bar {\t\t\n\t\t\tbackground-color: steelblue;\n\t\t\theight: 5px;\n\t\t}\n\n\t\ttable.bar-tbl td.value {\n\t\t\ttext-align: right;\n            padding-right: 5px;\n\t\t}\n\ntable.bar-tbl td.chart {\n\t\t\tmin-width: 70px\n\t\t}\n        table.bar-tbl td.breakdown {\n            max-width: 300px;\n            white-space: nowrap;\n            overflow: hidden;\n            text-overflow: ellipsis;\n\t\t}\n\n\t\ttable.bar-tbl th {\n\t\t\ttext-align: center;\n            cursor: pointer;\n            padding-bottom: 10px;\n\t\t}\n\n        table.bar-tbl th > span {\n            padding-right: 10px;\n            background-repeat: no-repeat;\n            background-position: right center;\n        }\n\t</style>",
+				"settings": {
+					"dimensions": [
+						{
+							"dimensionStatus": 1,
+							"dimensionType": 0,
+							"dimensionValue": null,
+							"__typename": "UserVisualizationDimensionType"
+						},
+						{
+							"dimensionStatus": 2,
+							"dimensionType": 1,
+							"dimensionValue": {
+								"dimensionType": 102,
+								"tracepointId": 0,
+								"tracepointName": null,
+								"__typename": "BreakdownDimensionRequestType"
+							},
+							"__typename": "UserVisualizationDimensionType"
+						},
+						{
+							"dimensionStatus": 2,
+							"dimensionType": 2,
+							"dimensionValue": {
+								"dimensionType": 21,
+								"tracepointId": 432,
+								"tracepointName": "Host",
+								"__typename": "BreakdownDimensionRequestType"
+							},
+							"__typename": "UserVisualizationDimensionType"
+						}
+					],
+					"metricCount": 10,
+					"__typename": "UserVisualizationSettingType"
+				},
+				"sourceType": 2,
+				"status": 9,
+				"isSystem": true,
+				"__typename": "UserVisualizationType"
+			}
+		]
+	}
+}

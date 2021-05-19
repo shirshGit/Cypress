@@ -1,6 +1,6 @@
 {
     "env" : {
-        "configFile" : "stage.env"
+        "configFile" : "local.env"
         
       },
       "pageLoadTimeout" : 60000,

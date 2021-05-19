@@ -1967,20 +1967,6 @@
                   "__typename": "InsightType"
               },
               {
-                  "id": 7061,
-                  "name": "TestName",
-                  "contentType": 2,
-                  "statusType": 0,
-                  "__typename": "InsightType"
-              },
-              {
-                  "id": 8115,
-                  "name": "test tt",
-                  "contentType": 2,
-                  "statusType": 1,
-                  "__typename": "InsightType"
-              },
-              {
                   "id": 8716,
                   "name": "EmulatedTest",
                   "contentType": 2,

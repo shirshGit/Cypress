@@ -1,0 +1,40 @@
+{
+	"data": {
+		"userIdentity": {
+			"id": 38,
+			"contacts": [
+				{
+					"id": 4627,
+					"name": "AdminQA qaautomationxclient",
+					"email": "qaautomationxclient-clientadministrator@catchpoint.com",
+					"levelSummary": {
+						"levelId": 12,
+						"levelName": "QA Client For Test Automation",
+						"levelType": 17,
+						"parentLevelId": null,
+						"parentLevelName": null,
+						"parentLevelType": null,
+						"__typename": "LevelSummaryType"
+					},
+					"__typename": "ContactType"
+				},
+				{
+					"id": 28887,
+					"name": "qaautomationxclient-clientadmi qaautomationxclient-clientadmi",
+					"email": "qaautomationxclient-clientadministrator@catchpoint.com",
+					"levelSummary": {
+						"levelId": 439,
+						"levelName": "Free WPT Client",
+						"levelType": 17,
+						"parentLevelId": null,
+						"parentLevelName": null,
+						"parentLevelType": null,
+						"__typename": "LevelSummaryType"
+					},
+					"__typename": "ContactType"
+				}
+			],
+			"__typename": "UserType"
+		}
+	}
+}

@@ -35,9 +35,9 @@ export default class explorer{
         return cy.get('div[class *= "TreeTable_checkboxCell"] > label');
     }
 
-    searchBoxInSouceBladeExplorer()
+    searchBoxInSouceBladeExplorerXpath()
     {
-        return 'input[data-testid = "fabricsearchbox"]';
+        return '(//input[@id = "fabric-search-box"])[2]';
     }
 
     testTextselectorFromSourceBlade()
@@ -80,9 +80,19 @@ export default class explorer{
         return '#primary-button > span';
     }
 
-    coloumnByDropDownButton()
+    coloumnByDropDownButtonXpath()
     {
-        return '#ComboBox111wrapper > button > span > i > div';
+        return '(//div[contains(@class , "ExplorerDimensionSelectorQuery_dimensionCont__UmNS")]//i[@data-icon-name = "chevrondownLarge"]/div[@class = "fabricIcons_chevrondownLarge_2mav2"])[2]';
+    }
+
+    coloumnByOptions()
+    {
+        return 'div [id *= "ComboBox"] > button > span > span> div > span';
+    }
+
+    metricsListLocatorXpath()
+    {
+        return '//button[@id = "metric_list_btn"]/span';
     }
 
 }
